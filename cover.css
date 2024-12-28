@@ -1,0 +1,312 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Gaya latar belakang utama */
+  body {
+    background: linear-gradient(to bottom, #a3e3f0 10%, #ffecb3 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Container utama */
+  .container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 100vh; /* Tinggi layar penuh */
+    padding: 0 50px;
+  }
+
+  /* Gaya teks */
+  .text-section {
+    color: #000; /* Warna teks hitam */
+    font-size: 2.5rem; /* Ukuran teks besar */
+    font-weight: bold;
+  }
+
+  /* Tombol */
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e60a14; /* Warna merah */
+    color: #ffffff; /* Warna teks putih */
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 50px; /* Membuat tombol oval */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+  }
+
+  /* Tambahan panah pada tombol */
+  .button::after {
+    content: " ➜";
+    font-size: 1rem;
+  }
+
+  /* Gaya gambar */
+  .image-section img {
+    max-width: 350px; /* Lebar maksimum gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+  }
+
+
+  .object-fit-md-contain {
+    width: 60%; /* Lebar gambar akan menyesuaikan dengan ukuran elemen secara horizontal */
+    height: auto; /* Tinggi gambar disesuaikan proporsional */
+  }
+  
+
+
+  /* .content-container:hover{
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0,0.4);
+  
+  } */
+
+  /* Ukuran foto lebih kecil */
+#about img {
+  width: 150px; /* Mengatur lebar gambar */
+  height: auto; /* Menjaga aspek rasio gambar */
+  object-fit: contain; /* Menjaga gambar agar tetap terlihat rapi */
+  margin: 0 auto; /* Untuk membuat gambar berada di tengah jika diperlukan */
+}
+
+  
+/* Container utama */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+
+  /* Logo */
+  .logo-section img {
+    width: 150px;/*logo */
+    border-radius: 50%; /* Membuat logo bulat */
+    margin-right: 30px; /* Jarak logo ke teks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+  }
+
+  /* Teks di sebelah kanan */
+  .text-section {
+    max-width: 600px; /* Batas lebar teks */
+  }
+
+  .text-section h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #a3e3f0; /* Warna lebih tua */
+        color: #555; /* Warna teks */
+        font-size: 0.9rem;
+        margin-top: 30px;
+    }
+
+
+
+
+    .category-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px; /* Jarak antar kartu */
+    }
+
+    .category-header {
+      text-align: left; /* Mengatur teks di tengah */
+      margin-bottom: 20px; /* Jarak antara teks dan kartu */
+      margin-left: 55px;
+  }
+
+    .category-card {
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #f5faff; /* Warna latar belakang */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+      width: 300px; /* Lebar kartu */
+      height: 100px;
+    }
+
+    .category-card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+      cursor: pointer;
+    }
+
+    .category-card img {
+      width: 50px; /* Ukuran ikon */
+      height: 50px;
+      margin-right: 2px; /* Margin kanan untuk memindahkan gambar sedikit ke kanan */
+    }
+
+    .category-card .info {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+    }
+
+    .category-card .info h5 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .category-card .info p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .category-card .arrow {
+      font-size: 24px;
+      color: #007bff; /* Warna panah */
+    }
+
+
+
+
+
+    /* Kontainer kartu */
+    .card-container {
+      padding: 50px;
+      gap: 50px; /* Jarak antar kartu */
+      display: flex; /* Mengatur elemen di dalamnya agar menggunakan layout flexbox */
+      align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+      justify-content: center; /* Menyelaraskan elemen secara horizontal di tengah */
+  
+    }
+
+    /* Setelan kartu */
+    .card {
+      background-color: #fff;
+      border: 5px solid black;
+      border-radius: 10px;
+      border-color: black;
+      border-width: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      padding-bottom: 10px;
+    }
+
+    .card:hover{
+      background-color: #e7e7e7;
+    }
+
+    /* Header kartu */
+    .card-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #f5faff; /* Warna latar header */
+    }
+
+    /* Gambar profil */
+    .profile-picture {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Nama pengguna */
+    .username {
+      font-weight: bold;
+      font-size: 12px;
+      color: #333;
+    }
+
+    /* Gambar utama */
+    .card-image {
+      width: 90%; /* Lebar gambar 80% dari container */
+      height: auto;
+      aspect-ratio: 1 / 1; /* Menjaga rasio 1:1 */
+      object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+      margin: 0 auto; /* Mengatur gambar ke tengah */
+      display: block;
+      border-radius: 5px; /* Tambahkan border radius untuk estetika */
+      margin-top: 20px;
+    }
+
+    /* Body kartu */
+    .card-body {
+      padding: 10px;
+    }
+
+    /* Ikon */
+    .icons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+
+    .icons-eye{
+      display: flex;
+      margin-bottom: 5px;
+      width: 10px;
+      height: auto;
+      color: #555;
+    }
+
+    .icons span {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Caption */
+    .caption {
+      font-size: 14px;
+      color: #555;
+    }
+
+     /* Media Queries untuk layar lebih kecil */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Tumpukan kartu secara vertikal */
+      align-items: center; /* Pusatkan kartu */
+    }
+
+    .card {
+      width: 90%; /* Kartu memenuhi 90% lebar layar */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .username {
+      font-size: 10px; /* Kurangi ukuran teks username */
+    }
+
+    .caption {
+      font-size: 12px; /* Kurangi ukuran teks caption */
+    }
+
+    .card {
+      width: 100%; /* Kartu memenuhi seluruh lebar layar */
+    }
+  }
