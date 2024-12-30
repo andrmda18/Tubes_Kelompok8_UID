@@ -209,3 +209,117 @@
         margin-top: 0; /* Menghapus margin-top untuk penataan yang lebih rapih */
     }
 }
+
+
+
+
+
+/* Menata judul utama pada detail */
+.details h1 {
+    font-size: 24px; /* Ukuran font judul */
+    font-weight: bold; /* Mengatur font menjadi tebal */
+    padding: auto;
+  }
+  
+  /* Menata paragraf dalam detail */
+  .details p {
+    color: #6B7280; /* Warna teks */
+  }
+  
+  /* Menata elemen info (seperti author, waktu, dll.) */
+  .details .info {
+    display: flex; /* Menggunakan Flexbox untuk menata elemen info */
+    align-items: center; /* Memposisikan elemen info secara vertikal di tengah */
+    gap: 8px; /* Memberikan jarak antar elemen info */
+  }
+  
+  /* Menata ikon dalam elemen info */
+  .details .info i {
+    color: #6B7280; /* Warna ikon */
+  }
+  
+  /* Menata span dalam elemen info */
+  .details .info span {
+    color: #374151; /* Warna teks */
+  }
+  
+  /* Menata sub-judul dalam detail */
+  .details h2 {
+    font-size: 20px; /* Ukuran font sub-judul */
+    font-weight: 600; /* Mengatur font menjadi semi-tebal */
+  }
+  
+  /* Menata daftar bahan dan alat dalam detail */
+  .details ul {
+    list-style-type: disc; /* Menambahkan titik di depan daftar */
+    padding-left: 20px; /* Memberikan padding kiri untuk daftar */
+  }
+  
+  /* Media query untuk layar lebih besar dari 768px */
+  @media (min-width: 768px) {
+    /* Menata container agar tampil dalam baris (row) pada layar besar */
+    .container {
+        flex-direction: row; /* Menata kontainer utama menjadi horizontal */
+        align-items: flex-start; /* Menata konten di sebelah kiri */
+    }
+  
+    /* Menata main-content agar tetap vertikal dan memberi margin kanan */
+    .main-content {
+        flex-direction: column; /* Menjaga agar elemen utama tetap vertikal */
+        align-items: center; /* Memposisikan elemen utama secara horizontal di tengah */
+        margin-right: 16px; /* Memberikan margin kanan pada konten utama */
+    }
+  
+    /* Menghilangkan margin-top pada detail di layar besar */
+    .details {
+        margin-top: 0; /* Menghapus margin-top untuk penataan yang lebih rapih */
+    }
+  }
+  
+  
+  
+  
+  
+  .recipe-steps {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .recipe-steps h2 {
+    font-size: 20px; /* Ukuran font sub-judul */
+    font-weight: 600; /* Mengatur font menjadi semi-tebal */
+    padding: auto;
+    margin-bottom: 10px;
+  
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .step img {
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .step-content {
+    padding: 15px;
+    width: 70%;
+  }
+  .step-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .step-description {
+    font-size: 16px;
+    color: #333;
+  }
