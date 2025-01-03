@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- <link rel="stylesheet" href="foto.css" /> -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+    <style>
+      /* Body dan Konten Utama */
+body, /* Selektor untuk elemen body */
+html { /* Selektor untuk elemen html */
+  background-color: #d9d9d9; /* Warna latar belakang abu-abu terang */
+  font-family: "League Spartan", sans-serif; /* Jenis font untuk teks */
+  margin: 0; /* Hapus margin default */
+}
+
+/* Sidebar */
+.sidebar { /* Selektor untuk elemen dengan kelas sidebar */
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  flex-direction: column; /* Susunan elemen secara vertikal */
+  justify-content: space-between; /* Memberikan jarak antar elemen atas-bawah */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  width: 60px; /* Lebar tetap sidebar */
+  background-color: white; /* Warna latar putih */
+  position: fixed; /* Sidebar tetap di tempat meskipun halaman digulir */
+  height: 97%; /* Tinggi sidebar 97% dari tinggi layar */
+  margin: 10px; /* Jarak luar dari tepi layar */
+  border-radius: 10px; /* Sudut membulat untuk sidebar */
+}
+
+/* Gaya untuk ul di dalam sidebar */
+.sidebar ul { /* Selektor untuk ul di dalam sidebar */
+  list-style-type: none; /* Menghapus bullet list */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  width: 100%; /* Memenuhi lebar penuh sidebar */
+  display: flex; /* Menggunakan Flexbox */
+  flex-direction: column; /* Susunan elemen secara vertikal */
+  justify-content: flex-start; /* Semua elemen berada di atas */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  gap: 20px; /* Jarak antar elemen */
+}
+
+/* Gambar logo */
+.sidebar ul li img { /* Selektor untuk gambar dalam sidebar */
+  width: 40px; /* Lebar gambar 40px */
+  height: auto; /* Tinggi otomatis sesuai rasio */
+  margin-top: 5px; /* Jarak atas 5px */
+}
+
+/* Elemen list */
+.sidebar ul li { /* Selektor untuk elemen li dalam sidebar */
+  display: flex; /* Flexbox untuk mengatur konten */
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  align-items: center; /* Pusatkan konten secara vertikal */
+}
+
+/* Tautan dalam list */
+.sidebar ul li a { /* Selektor untuk tautan dalam list */
+  text-decoration: none; /* Menghapus garis bawah tautan */
+  color: black; /* Warna teks hitam */
+}
+
+.sidebar ul li i { /* Selektor untuk ikon dalam sidebar */
+  font-size: 30px; /* Ukuran ikon 30px */
+  color: #555; /* Warna abu-abu gelap */
+}
+
+/* Efek hover */
+.sidebar ul li a:hover { /* Gaya tautan saat mouse di atasnya */
+  color: white; /* Warna teks berubah menjadi biru muda */
+}
+
+.sidebar ul li a:hover i { /* Gaya ikon saat mouse di atas tautan */
+  color: #85cddb; /* Warna ikon berubah menjadi biru muda */
+}
+
+/* Main content */
+.main-content { /* Selektor untuk konten utama */
+  background-color: #f8f9fa; /* Warna latar konten utama */
+  height: 97vh; /* Tinggi konten utama */
+  margin-top: 10px; /* Jarak atas dari tepi */
+  margin-bottom: 10px; /* Jarak bawah dari tepi */
+  margin-left: 80px; /* Jarak dari sidebar */
+  border-radius: 10px; /* Sudut membulat */
+  overflow-y: auto; /* Tambahkan scrollbar jika konten melebihi tinggi */
+}
+
+
+/* Menggunakan Flexbox untuk tata letak gambar dan teks yang sejajar */
+.container-flex {
+  display: flex; /* Menjadikan elemen container sebagai flexbox untuk menyusun anak-anaknya dalam satu baris */
+  align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+  justify-content: flex-start; /* Menjaga gambar di kiri dan teks di kanan */
+
+}
+
+
+.container {
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;  
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+}
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.total-payment {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.amount {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.qr-code {
+    margin: 20px 0;
+    text-align: center;
+}
+.instruction {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+.detail-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.btn-upload {
+    background-color: #00cfff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.btn-upload:hover {
+    background-color: #00b3e6;
+}
+.divider {
+    border-top: 1px solid #d3c09b;
+    margin: 10px 0;
+}
+
+.file-upload {
+    margin-top: 10px;
+}
+.file-format {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1 p-0 sidebar">
+        <ul>
+          <li><img src="images/LOGO.png" alt="logo" /></li>
+          <li>
+            <a href="#profile"><i class="bi bi-person-fill"></i></a>
+          </li>
+          <li>
+            <a href="#home"><i class="bi bi-house-door-fill"></i></a>
+          </li>
+          <li>
+            <a href="#communities"><i class="bi bi-people-fill"></i></a>
+          </li>
+          <li>
+            <a href="#messages"
+              ><i class="bi bi-chat-square-text-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#notification"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li>
+            <a href="#favorite"><i class="bi bi-bookmark-heart-fill"></i></a>
+          </li>
+          <li>
+            <a href="#download"><i class="bi bi-download"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar end -->
+
+      <!-- main content start -->
+      <div class="col main-content">
+          <div class="container p-5">
+            <div class="title">
+                Pembayaran Qris
+               </div>
+               <div class="subtitle">
+                Scan Qris berikut untuk melakukan pembayaran
+               </div>
+               <div class="total-payment">
+                Total Pembayaran:
+               </div>
+               <div class="amount">
+                Rp 12.000
+               </div>
+               <div class="qr-code">
+                <img alt="QR code for payment" height="200" src="https://storage.googleapis.com/a1aa/image/oDnNdJ6R5U5TORtEXT0uKoglMzEsQVhFZYvHGZbnLR3wUMAF.jpg" width="200"/>
+               </div>
+               <div class="instruction">
+                Silahkan lakukan pembayaran dengan memindai kode Qris diatas.
+               </div>
+               <div class="mb-3">
+                    <label for="formFile" class="form-label">Pilih Bukti Pembayaran</label>
+                    <input class="form-control file-upload" type="file" id="formFile">
+                    <div class="file-format">Format: JPG, JPEG, PNG</div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                    <button class="btn-upload">Upload bukti pembayaran</button>
+                </div>
+            </div>
+        </div>
+          </div>       
+        
+        <!-- Main Content End -->
+      </div>
+    </div>
+  </div>
+  <script>
+    // function showCoinDetails(coinAmount) {
+    //     document.getElementById('coin-details').innerText = Anda memilih ${coinAmount} Koin;
+    // }
+</script>
+</body>
+</html>
