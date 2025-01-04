@@ -41,6 +41,16 @@
         overflow-y: auto; /* Agar konten utama scrollable */
       }
 
+      .sticky-header {
+        position: fixed;
+        padding: 0;
+        top: 0;
+        left: 80px;
+        width: calc(100% - 80px); /* Menghindari tumpang tindih */
+        z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
+        background-color: #ffecbb; /* Tambahkan background agar tidak transparan */
+      }
+
       .menu-item {
         text-decoration: none; /* Menghapus garis bawah pada link */
         color: #6e44c2; /* Mengatur warna teks untuk menu */
@@ -119,6 +129,45 @@
         background-color: #d4c8f2;
         border-radius: 15px;
       }
+
+      @media (max-width: 768px) {
+        .sticky-header {
+          left: 0;
+          width: 100%;
+        }
+
+        .form-control {
+          width: 100%;
+        }
+
+        .nav-profile span {
+          display: none; /* Sembunyikan nama pengguna di perangkat kecil */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .sticky-header {
+          padding: 10px; /* Mengurangi padding untuk menghemat ruang */
+        }
+
+        .sticky-header .d-flex {
+          flex-direction: column; /* Menumpuk elemen secara vertikal */
+          align-items: center; /* Rata tengah */
+        }
+
+        .sticky-header .d-flex.align-items-center {
+          margin-bottom: 10px; /* Memberikan sedikit jarak antar baris */
+        }
+
+        .form-control {
+          width: 100%; /* Pastikan input pencarian menggunakan seluruh lebar */
+          margin-bottom: 10px; /* Menambahkan ruang bawah pada input */
+        }
+
+        .nav-profile span {
+          display: none; /* Sembunyikan nama pengguna di perangkat kecil */
+        }
+      }
     </style>
   </head>
 
@@ -173,7 +222,48 @@
         <!-- sidebar end -->
 
         <!-- Main Content start -->
-        <div class="col-11 flex-1 p-0"></div>
+        <div class="col-11 flex-1 p-0">
+          <!-- header start -->
+          <div class="flex items-center justify-between sticky-header">
+            <div class="flex items-center space-x-2">
+              <span class="text-xl font-bold px-2">foodie</span>
+              <div
+                class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-full"
+              >
+                <span class="text-xl font-bold">F</span>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <div class="relative">
+                <input
+                  class="w-96 h-10 pl-4 pr-10 rounded-full border border-black"
+                  placeholder="Search"
+                  type="text"
+                />
+                <i
+                  class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2"
+                ></i>
+              </div>
+
+              <a href="#" class="menu-nav">
+                <div class="icon-container">
+                  <i class="bi bi-bell"></i>
+                </div>
+              </a>
+
+              <div class="nav-profile">
+                <a href="#" class="menu-nav">
+                  <div class="icon-container">
+                    <i class="bi bi-person-circle"></i>
+                  </div>
+                  <span>Chanyeol</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- header end -->
+        </div>
       </div>
     </div>
     <!-- Link ke Bootstrap JS dan Popper.js (untuk fitur interaktif seperti dropdown dan carousel) -->
