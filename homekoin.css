@@ -1,0 +1,219 @@
+body,
+html {
+  background-color: #ffecbb;
+  font-family: "league spartan", sans-serif;
+  margin: 0;
+}
+
+.col-11 {
+  margin-left: 100px; /* Menambahkan margin kiri untuk memberikan ruang di samping sidebar */
+  margin-right: 20px;
+  padding: 20px;
+  width: calc(100% - 80px); /* Menghindari tumpang tindih */
+  overflow-y: auto; /* Agar konten utama scrollable */
+}
+
+.sticky-header {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 80px;
+  width: calc(100% - 80px); /* Menghindari tumpang tindih */
+  z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
+  background-color: #ffecbb; /* Tambahkan background agar tidak transparan */
+}
+
+.menu-item {
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  color: #6e44c2; /* Mengatur warna teks untuk menu */
+  display: flex; /* Menggunakan flexbox untuk menyusun ikon dan teks secara vertikal */
+  flex-direction: column; /* Menyusun ikon dan teks secara kolom */
+  align-items: center; /* Memusatkan ikon dan teks secara horizontal */
+  margin-bottom: 20px; /* Memberikan jarak antara menu-item */
+}
+
+/* Kontainer untuk ikon di menu */
+.icon-container {
+  width: 50px; /* Lebar kontainer ikon */
+  height: 50px; /* Tinggi kontainer ikon */
+  display: flex; /* Flexbox untuk menyusun ikon di tengah */
+  align-items: center; /* Menjaga ikon tetap di tengah secara vertikal */
+  justify-content: center; /* Memusatkan ikon secara horizontal */
+  margin-bottom: 5px; /* Memberikan jarak antara ikon dan teks */
+}
+
+/* Ukuran dan warna ikon di menu */
+.icon-container i {
+  font-size: 24px; /* Ukuran ikon */
+  color: #6e44c2; /* Warna ikon */
+}
+
+/* Teks pada menu item */
+.menu-item span {
+  font-size: 14px; /* Ukuran teks pada menu */
+  color: #6e44c2; /* Warna teks */
+}
+
+/* Efek hover untuk menu item */
+.menu-item:hover .icon-container {
+  background-color: #d4c8f2; /* Warna latar belakang saat hover */
+  border-radius: 50%; /* Membuat background ikonnya berbentuk lingkaran */
+}
+
+.menu-nav {
+  display: flex; /* Menggunakan flexbox untuk menyusun ikon dan teks secara horizontal */
+  align-items: center; /* Memusatkan ikon dan teks secara vertikal */
+}
+
+.menu-nav span {
+  font-size: 14px; /* Ukuran teks pada menu */
+  color: #6e44c2; /* Warna teks */
+  margin-left: 5px; /* Memberikan jarak antara ikon dan teks */
+}
+
+.icon-cont {
+  width: 50px; /* Lebar kontainer ikon */
+  height: 50px; /* Tinggi kontainer ikon */
+  display: flex; /* Flexbox untuk menyusun ikon di tengah */
+  align-items: center; /* Menjaga ikon tetap di tengah secara vertikal */
+  justify-content: center; /* Memusatkan ikon secara horizontal */
+}
+
+/* Ukuran dan warna ikon di menu */
+.icon-cont i {
+  font-size: 24px; /* Ukuran ikon */
+  color: #6e44c2; /* Warna ikon */
+}
+
+.menu-nav span {
+  font-size: 18px; /* Ukuran teks pada menu */
+  color: #6e44c2; /* Warna teks */
+  margin-right: 15px;
+}
+
+/* Efek hover untuk menu item */
+.menu-nav:hover .icon-container {
+  background-color: #d4c8f2; /* Warna latar belakang saat hover */
+  border-radius: 50%; /* Membuat background ikonnya berbentuk lingkaran */
+}
+
+.nav-profile:hover {
+  background-color: #d4c8f2;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .sticky-header {
+    left: 0;
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .nav-profile span {
+    display: none; /* Sembunyikan nama pengguna di perangkat kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .sticky-header {
+    padding: 10px; /* Mengurangi padding untuk menghemat ruang */
+  }
+
+  .sticky-header .d-flex {
+    flex-direction: column; /* Menumpuk elemen secara vertikal */
+    align-items: center; /* Rata tengah */
+  }
+
+  .sticky-header .d-flex.align-items-center {
+    margin-bottom: 10px; /* Memberikan sedikit jarak antar baris */
+  }
+
+  .form-control {
+    width: 100%; /* Pastikan input pencarian menggunakan seluruh lebar */
+    margin-bottom: 10px; /* Menambahkan ruang bawah pada input */
+  }
+
+  .nav-profile span {
+    display: none; /* Sembunyikan nama pengguna di perangkat kecil */
+  }
+}
+
+
+
+/* KONTEN */
+.container {
+      padding: 32px;
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 800px;
+      margin-top: 100px;
+  }
+  .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+  }
+  .header img {
+      width: 120px;
+      height: 120px;
+  }
+  .header .info {
+      margin-left: 24px;
+  }
+  .header .info .coins {
+      font-size: 48px;
+      font-weight: bold;
+  }
+  .header .info .details {
+      font-size: 24px;
+  }
+  .buttons {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 32px;
+  }
+  .buttons button {
+      background-color: #ffffff;
+      color: black;
+      font-weight: bold;
+      padding: 16px 32px;
+      border-radius: 15px;
+      border-color: #5b81bb;
+      border-width: 3px;
+      cursor: pointer;
+      font-size: 18px;
+  }
+
+  .buttons button:hover{
+    background-color: #5b81bb;
+  }
+  .transaction-history {
+      margin-bottom: 24px;
+  }
+  .transaction-history .title {
+      font-size: 32px;
+      font-weight: bold;
+  }
+  .transaction-history .subtitle {
+      font-size: 32px;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+  }
+  table th, table td {
+      padding: 12px;
+      font-size: 18px;
+  }
+  table th {
+      border-bottom: 2px solid #FFD700;
+  }
+  table tr {
+      border-bottom: 1px solid #FFD700;
+  }
