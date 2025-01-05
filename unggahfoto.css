@@ -23,6 +23,10 @@ html {
   background-color: #ffecbb; /* Tambahkan background agar tidak transparan */
 }
 
+#sidebar {
+  background-color: #9cf4f9;
+}
+
 .banner {
   padding-top: 100px;
   width: 100%; /* Pastikan lebar 100% agar menyesuaikan container parent */
@@ -432,13 +436,16 @@ html {
 }
 
 .upload-button button {
-  margin-top: 16px; /* Jarak dari atas button */
-  background-color: #00bcd4; /* Warna latar tombol */
-  color: white; /* Warna teks tombol */
+  border: 2px solid #9cf4f9; /* Warna dan ketebalan border */
+  border-radius: 15px; /* Efek rounded pada sudut tombol */
+  margin-top: 16px; /* Jarak dari atas tombol */
+  color: #6e44c2; /* Warna teks tombol */
   padding: 8px 16px; /* Padding pada tombol */
-  border: none; /* Menghilangkan garis batas pada tombol */
-  border-radius: 8px; /* Membuat efek rounded pada sudut tombol */
-  cursor: pointer; /* Menunjukkan tombol dapat diklik */
+  cursor: pointer; /* Efek pointer saat hover */
+}
+
+.upload-button button:hover {
+  background-color: #9cf4f9; /* Warna latar tombol */
 }
 
 /* Overlay Styling */
