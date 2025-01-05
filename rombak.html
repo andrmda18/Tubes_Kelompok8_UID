@@ -168,6 +168,97 @@
           display: none; /* Sembunyikan nama pengguna di perangkat kecil */
         }
       }
+
+      .album-save {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 900px;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border: 1px solid #ddd;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .card-content {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .card-content h3 {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 15px;
+        background-color: #ddd;
+      }
+
+      .card-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+
+      .card-images img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1; /* Menjaga rasio 1:1 */
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .button-container {
+        display: flex;
+        width: 100%;
+        gap: 10px; /* Menambahkan jarak antar tombol */
+      }
+
+      .button {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        background-color: #ffff;
+        height: 70px;
+        border: 3px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .button:last-child {
+        background-color: #9cf4f9;
+      }
+
+      .button:hover {
+        background-color: #9cf4f9;
+      }
+
+      @media (max-width: 768px) {
+        .button-container {
+          flex-direction: column;
+          gap: 10px; /* Jarak tetap untuk versi responsif */
+        }
+      }
     </style>
   </head>
 
@@ -263,6 +354,69 @@
             </div>
           </div>
           <!-- header end -->
+          <div class="album-save">
+            <!-- Button container -->
+            <div class="button-container">
+              <div class="button">
+                Semua
+                <a href="#"></a>
+              </div>
+              <div class="button">
+                Album
+                <a href="#"></a>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="card">
+                <div class="card-images">
+                  <img src="images/capuccino.jpg" alt="Bread" />
+                  <img src="images/dawet.jpg" alt="Waffle" />
+                  <img src="images/sehun.jpg" alt="Croissant" />
+                  <img src="images/chef jaemin.jpg" alt="Chocolate Bread" />
+                </div>
+                <div class="card-content">
+                  <h3>minuman</h3>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-images">
+                  <img src="image1.jpg" alt="Bread" />
+                  <img src="image2.jpg" alt="Waffle" />
+                  <img src="image3.jpg" alt="Croissant" />
+                  <img src="image4.jpg" alt="Chocolate Bread" />
+                </div>
+                <div class="card-content">
+                  <h3>Sarapan lucu</h3>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-images">
+                  <img src="image1.jpg" alt="Bread" />
+                  <img src="image2.jpg" alt="Waffle" />
+                  <img src="image3.jpg" alt="Croissant" />
+                  <img src="image4.jpg" alt="Chocolate Bread" />
+                </div>
+                <div class="card-content">
+                  <h3>Sarapan lucu</h3>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-images">
+                  <img src="image1.jpg" alt="Bread" />
+                  <img src="image2.jpg" alt="Waffle" />
+                  <img src="image3.jpg" alt="Croissant" />
+                  <img src="image4.jpg" alt="Chocolate Bread" />
+                </div>
+                <div class="card-content">
+                  <h3>Sarapan lucu</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
