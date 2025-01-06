@@ -178,7 +178,7 @@
 
 .grid-item { /* Selektor untuk item grid */
   margin-top: 100px;
-  background-color: #ffff;
+  background-color: white;
   border-radius: 10px; /* Sudut membulat */
   overflow: hidden; /* Sembunyikan konten keluar dari grid */
   padding: 10px; /* Padding dalam item */
@@ -188,45 +188,26 @@
   height: 250px; /* Tinggi tetap item */
   width: 300px;
   position: relative;
-  border: 3px solid #9cf4f9;
+  border: 5px solid #9cf4f9;
 }
 
 .grid-item img { /* Selektor untuk gambar dalam item grid */
+  /* background-color: white; */
   width: 100%; /* Gambar memenuhi lebar item */
-  height: 180px; /* Tinggi tetap gambar */
+  height: 170px; /* Tinggi tetap gambar */
   object-fit: cover; /* Isi gambar tanpa mengubah proporsi */
   object-position: center; /* Pusatkan gambar */
   border-radius: 8px; /* Sedikit membulatkan gambar */
+  border: 2px solid #9cf4f9;
 }
 
-.grid-item .duration {
-  background-color: rgba(0, 0, 0, 0.7); /* Latar belakang hitam transparan */
-  color: #fff; /* Warna teks putih */
-  font-size: 14px; /* Ukuran teks */
-  padding: 2px 6px; /* Padding teks */
-  border-radius: 5px; /* Membuat sudut melengkung */
-  position: absolute;
-  bottom: 10px; /* Berada di sudut kanan bawah */
-  right: 10px;
-}
-
-/* Styling untuk ikon play button */
-.grid-item .play-button {
-  font-size: 50px; /* Ukuran ikon */
-  color: rgba(255, 255, 255, 0.8); /* Warna ikon putih transparan */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Pusatkan ikon */
-  cursor: pointer; /* Menambahkan efek pointer pada hover */
-}
 
 .grid-item .info { /* Selektor untuk informasi dalam grid */
   margin-top: 10px; /* Jarak atas dari gambar */
 }
 
 .grid-item .info h5 { /* Selektor untuk judul informasi */
-  font-size: 16px; /* Ukuran font besar */
+  font-size: 20px; /* Ukuran font besar */
   font-weight: bold; /* Teks tebal */
   margin: 0; /* Menghapus margin default */
 }
@@ -336,37 +317,31 @@
           <div class="container my-4">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
               <!-- Grid Item 1 -->
-              <div class="col">
+              <div class="col"> 
                 <div class="grid-item">
-                  <img src="images/mango sticky rice.jpg" alt="Example 2">
                   <div class="info">
-                      <h5>Thailand Mango Sticky Rice</h5>
-                      <div class="profile">
-                          <!-- <img src="/images/LOGO.png" class="circle-img" alt="Profile"> -->
-                          <p class="username">Hendery</p>
-                        </div>
+                    <h5>10 Koin</h5>
+                  <img src="images/koin 1.png" alt="Example 3">
+                    <p>username</p>
                   </div>
                 </div>
               </div>
               <!-- Grid Item 2 -->
-              <div class="col">
+              <div class="col"> 
                 <div class="grid-item">
-                  <img src="images/koi" alt="Example 2">
                   <div class="info">
-                      <h5>Thailand Mango Sticky Rice</h5>
-                      <div class="profile">
-                          <!-- <img src="/images/LOGO.png" class="circle-img" alt="Profile"> -->
-                          <p class="username">Hendery</p>
-                        </div>
+                    <h5>20 Koin</h5>
+                  <img src="images/koin 1.png" alt="Example 3">
+                    <p>username</p>
                   </div>
                 </div>
               </div>
               <!-- Grid Item 3 -->
               <div class="col"> 
                 <div class="grid-item">
-                  <img src="images/smoothie-bowl.jpg" alt="Example 3">
                   <div class="info">
-                    <h5>Smoothies Bowl</h5>
+                    <h5>50 Koin</h5>
+                  <img src="images/koin 2.png" alt="Example 3">
                     <p>username</p>
                   </div>
                 </div>
@@ -374,9 +349,9 @@
               <!-- grid item 4 -->
               <div class="col"> 
                 <div class="grid-item">
-                  <img src="images/smoothie-bowl.jpg" alt="Example 3">
                   <div class="info">
-                    <h5>Smoothies Bowl</h5>
+                    <h5>100 Koin</h5>
+                  <img src="images/koin 3.png" alt="Example 3">
                     <p>username</p>
                   </div>
                 </div>
