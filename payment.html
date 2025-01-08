@@ -173,10 +173,13 @@
         background-color: #ffff;
         padding: 32px;
         border-radius: 8px;
-        box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 800px;
         margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
       }
 
       .title {
@@ -197,11 +200,25 @@
         text-align: center;
       }
       .qris {
-        margin: 20px 0;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+          margin: 20px 0;
+          display: flex; /* Aktifkan Flexbox */
+          align-items: center; /* Pusatkan secara vertikal */
+          justify-content: center; /* Pusatkan secara horizontal */
       }
+
+      .foto-qris {
+          text-align: center;
+          display: flex; /* Aktifkan Flexbox */
+          justify-content: center; /* Pusatkan secara horizontal */
+          align-items: center; /* Pusatkan secara vertikal */
+          width: 100%; /* Gunakan lebar penuh dari kontainer */
+      }
+
+      .foto-qris img {
+          width: 200px;
+          height: auto; /* Pertahankan rasio aspek gambar */
+      }
+
 
       .instruction {
         font-size: 14px;
@@ -215,15 +232,16 @@
       }
 
       .btn-upload {
-        background-color: #00cfff;
+        background-color: white;
+        border-color: #6499e9;
+        border-width: 2px;
         color: black;
         font-weight: bold;
-        border: none;
         padding: 10px 20px;
         border-radius: 5px;
       }
       .btn-upload:hover {
-        background-color: #00b3e6;
+        background-color: #6499e9;
       }
       .divider {
         border-top: 1px solid #d3c09b;
@@ -342,11 +360,11 @@
             <div class="amount">Rp 12.000</div>
             <div class="qris flex items-center">
               <div class="foto-qris">
-                <img src="images/sehun.jpg" alt="qris" />
+                <img src="images/Pembayaran Foodie.png" alt="qris" />
               </div>
             </div>
             <div class="instruction">
-              Silahkan lakukan pembayaran dengan memindai kode Qris diatas.
+              Silahkan lakukan pembayaran dengan memindai kode Qris di atas.
             </div>
             <div class="mb-3">
               <label for="formFile" class="form-label"
