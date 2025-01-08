@@ -2,191 +2,167 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Profile Page</title>
+    <title>Foodie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <style>
-      body {
-        background-color: #fffbcc;
-        font-family: Arial, sans-serif;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 16px;
-      }
-      .header {
-        position: relative;
-      }
-      .header img.cover {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-      .profile-pic {
-        position: absolute;
-        top: 140px; /* Adjusted to move the profile picture lower */
-        left: 16px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 4px solid #fffbcc;
-      }
-      .profile-role {
-        position: absolute;
-        top: 250px; /* Adjusted to position the text below the profile picture */
-        left: 16px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #333;
-        text-align: center;
-        width: 100px; /* Match the width of the profile picture */
-      }
-      .rating {
-        position: absolute;
-        top: 270px; /* Adjusted to position the rating below the role text */
-        left: 16px;
-        text-align: center;
-        width: 100px; /* Match the width of the profile picture */
-        color: #ffd700; /* Gold color for stars */
-      }
-      .rating i {
-        font-size: 12px; /* Smaller size for stars */
-      }
-      .follow-info {
-        position: absolute;
-        top: 290px; /* Adjusted to position the follow info below the rating */
-        left: 16px;
-        text-align: center;
-        width: 100px; /* Match the width of the profile picture */
-        font-size: 14px;
-        color: #333;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px; /* Add gap between following and followers */
-      }
-      .follow-info div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .profile-info {
-        background-color: #fffbcc;
-        padding: 16px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .profile-info .details {
-        margin-left: 120px;
-        margin-top: -20px; /* Move the text "Monsieur oss" slightly upwards */
-      }
-      .profile-info h1 {
-        font-size: 24px;
-        font-weight: bold;
-      }
-      .profile-info .stats {
-        display: flex;
-        align-items: center;
-        color: #666;
-        margin-top: 8px;
-      }
-      .profile-info .stats div {
-        display: flex;
-        align-items: center;
-        margin-right: 16px;
-      }
-      .profile-info .stats i {
-        margin-right: 4px;
-      }
-      .profile-info .actions {
-        display: flex;
-        align-items: center;
-        margin-top: -20px; /* Move the message icon and follow button slightly upwards */
-      }
-      .profile-info .actions i {
-        color: #666;
-        margin-right: 8px;
-      }
-      .profile-info .actions button {
-        background-color: #1da1f2;
-        color: white;
-        padding: 8px 16px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      .small-photo {
-        position: absolute;
-        top: 340px; /* Adjusted to position the small photo below the follow info */
-        left: 16px;
-        width: 30px;
-        height: 30px;
-        object-fit: cover;
-        border-radius: 8px;
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profile.css" />
   </head>
+
   <body>
-    <div class="container">
-      <div class="header">
-        <img
-          alt="A person playing guitar in a black and white photo"
-          class="cover"
-          src="https://storage.googleapis.com/a1aa/image/KoqjPsVRWQL9GFbAnyNyU0CExZn1wK1c06AyGjk01Xr4iFAF.jpg"
-        />
-        <img
-          alt="Profile picture of a cat with one blue eye and one yellow eye"
-          class="profile-pic"
-          src="https://storage.googleapis.com/a1aa/image/kkEBLRJOdm4kFZqh27ndpZ4m3VwkKyvkpOfip76cBJfgLWAUA.jpg"
-        />
-        <div class="profile-role">Chef</div>
-        <div class="rating">
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star"> </i>
-          <i class="fas fa-star-half-alt"> </i>
-        </div>
-        <div class="follow-info">
-          <div>
-            <div>500</div>
-            <div>Following</div>
-          </div>
-          <div>
-            <div>2.1M</div>
-            <div>Followers</div>
-          </div>
-        </div>
-        <img
-          alt="Small placeholder image"
-          class="small-photo"
-          height="30"
-          src="https://storage.googleapis.com/a1aa/image/kr9Gr25eynU2JSIfTXEf5cPd6MFm6WZpQfbVSkGKavFpmaBQB.jpg"
-          width="30"
-        />
-      </div>
-      <div class="profile-info">
-        <div class="details">
-          <h1>Monsieur oss</h1>
-          <div class="stats">
-            <div>
-              <i class="fas fa-eye"> </i>
-              <span> 2.1M </span>
-            </div>
-            <div>
-              <i class="fas fa-heart"> </i>
-              <span> 2.1M </span>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar start -->
+        <div class="col-1 flex h-screen p-0 position-fixed">
+          <div
+            class="bg-cyan-200 w-20 flex flex-col items-center py-4 space-y-8 rounded-r-3xl border-t-r-0"
+            style="border-top-right-radius: 0px"
+          >
+            <div class="flex flex-col items-center space-y-4">
+              <a href="#" class="menu-item">
+                <div class="icon-container">
+                  <i class="bi bi-house"></i>
+                </div>
+                <span>Beranda</span>
+              </a>
+              <a href="#" class="menu-item">
+                <div class="icon-container">
+                  <i class="bi bi-people"></i>
+                </div>
+                <span>Komunitas</span>
+              </a>
+              <a href="#" class="menu-item">
+                <div class="icon-container">
+                  <i class="bi bi-chat-left-text"></i>
+                </div>
+                <span>Obrolan</span>
+              </a>
+              <a href="#" class="menu-item">
+                <div class="icon-container">
+                  <i class="bi bi-bookmark"></i>
+                </div>
+                <span>Bookmark</span>
+              </a>
+              <a href="unggahfoto.html" class="menu-item">
+                <div class="icon-container">
+                  <i class="bi bi-plus-square"></i>
+                </div>
+                <span>Buat</span>
+              </a>
+              <a href="#" class="menu-item">
+                <div class="icon-container">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <span>Pengaturan</span>
+              </a>
             </div>
           </div>
         </div>
-        <div class="actions">
-          <i class="fas fa-comment-dots"> </i>
-          <button>Follow</button>
+        <!-- sidebar end -->
+
+        <!-- Main Content start -->
+        <div class="col-11 flex-1 p-0">
+          <!-- header start -->
+          <div class="flex items-center justify-between sticky-header">
+            <div class="flex items-center space-x-2">
+              <span class="text-xl font-bold px-2">foodie</span>
+              <div
+                class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-full"
+              >
+                <span class="text-xl font-bold">F</span>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <div class="relative">
+                <input
+                  class="w-96 h-10 pl-4 pr-10 rounded-full border border-black"
+                  placeholder="Search"
+                  type="text"
+                />
+                <i
+                  class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2"
+                ></i>
+              </div>
+
+              <a href="#" class="menu-nav">
+                <div class="icon-container">
+                  <i class="bi bi-bell"></i>
+                </div>
+              </a>
+
+              <div class="nav-profile">
+                <a href="#" class="menu-nav">
+                  <div class="icon-container">
+                    <i class="bi bi-person-circle"></i>
+                  </div>
+                  <span style="text-decoration: none">Chanyeol</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- header end -->
+
+          <!-- profile start -->
+          <div class="profile-card">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/KoqjPsVRWQL9GFbAnyNyU0CExZn1wK1c06AyGjk01Xr4iFAF.jpg"
+              alt="Cover Photo"
+              class="cover"
+            />
+            <div class="text-center">
+              <img
+                src="https://storage.googleapis.com/a1aa/image/kkEBLRJOdm4kFZqh27ndpZ4m3VwkKyvkpOfip76cBJfgLWAUA.jpg"
+                alt="Profile Picture"
+                class="profile-pic"
+              />
+            </div>
+            <div
+              class="details d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <h1>Monsieur oss</h1>
+                <p class="text-muted">Chef</p>
+                <div class="stats d-flex">
+                  <div class="me-4 text-center">
+                    <span class="d-block">2.1M</span>
+                    <p class="mb-0">Followers</p>
+                  </div>
+                  <div class="text-center">
+                    <span class="d-block">500</span>
+                    <p class="mb-0">Following</p>
+                  </div>
+                </div>
+              </div>
+              <div class="actions">
+                <button class="tombol">Message</button>
+                <button class="tombol">Follow</button>
+              </div>
+            </div>
+          </div>
+          <!-- profile end -->
         </div>
       </div>
     </div>
+    <!-- Link ke Bootstrap JS dan Popper.js (untuk fitur interaktif seperti dropdown dan carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
