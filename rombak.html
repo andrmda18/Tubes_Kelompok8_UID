@@ -278,29 +278,30 @@
             height: auto;
         }
 
-        /* Kontainer untuk tombol */
-        .button-container {
-            display: flex; /* Menggunakan flexbox untuk pemusatan */
-            justify-content: center; /* Memusatkan tombol secara horizontal */
+        .button-submit{
+            text-align: center;
+            justify-content: center;
+            margin-top: 10px;
+            background-color: #6499e9;
+            
+        }
+
+        .button-container{
+            text-align: right;
             padding: 10px;
             margin: 10px;
         }
 
         /* Gaya untuk tombol */
         .right-button {
-            padding: 10px 20px; /* Mengatur ukuran dalam tombol */
-            font-size: 16px; /* Ukuran teks tombol */
-            color: #fff; /* Warna teks tombol */
-            background-color: #6499e9; /* Warna latar belakang tombol */
-            border: none; /* Menghilangkan border tombol */
-            border-radius: 5px; /* Membuat sudut tombol melengkung */
-            cursor: pointer; /* Menampilkan pointer saat tombol dihover */
-            transition: background-color 0.3s; /* Menambahkan efek transisi pada hover */
-        }
-
-        /* Efek hover untuk tombol */
-        .right-button:hover {
-            background-color: #0056b3; /* Warna tombol saat dihover */
+        padding: 10px 20px; /* Mengatur ukuran dalam tombol */
+        font-size: 16px; /* Ukuran teks tombol */
+        color: #fff; /* Warna teks tombol */
+        background-color: #6499e9; /* Warna latar belakang tombol */
+        border: none; /* Menghilangkan border tombol */
+        border-radius: 5px; /* Membuat sudut tombol melengkung */
+        cursor: pointer; /* Menampilkan pointer saat tombol dihover */
+        transition: background-color 0.3s; /* Menambahkan efek transisi pada hover */
         }
 
     </style>
@@ -405,25 +406,41 @@
             <div class="nominal-container">
               <div class="nominal-card">
                   <img src="images/koin 1.png" alt="Koin">
-                  <div class="price">Rp 12.000</div>
+                  <div class="price">Rp 1.000</div>
               </div>
               <div class="nominal-card">
                   <img src="images/koin 2.png" alt="Koin">
-                  <div class="price">Rp 12.000</div>
+                  <div class="price">Rp 2.000</div>
               </div>
               <div class="nominal-card">
                   <img src="images/koin 3.png" alt="Koin">
-                  <div class="price">Rp 12.000</div>
+                  <div class="price">Rp 5.000</div>
               </div>
               <div class="nominal-card">
                   <img src="images/koin 4.png" alt="Koin">
-                  <div class="price">Rp 12.000</div>
+                  <div class="price">Rp 10.000</div>
               </div>
               <div class="nominal-card">
                   <img src="images/koin 5.png" alt="Koin">
-                  <div class="price">Rp 12.000</div>
+                  <div class="price">Rp 15.000</div>
               </div>
+              <div class="nominal-card">
+                <img src="images/koin 6.png" alt="Koin">
+                <div class="price">Rp 20.000</div>
             </div>
+            <div class="nominal-card">
+              <img src="images/koin 7.png" alt="Koin">
+              <div class="price">Rp 25.000</div>
+            </div>
+            <div class="nominal-card">
+              <img src="images/koin 8.png" alt="Koin">
+              <div class="price">Rp 30.000</div>
+          </div>
+          <div class="nominal-card">
+            <img src="images/koin 9.png" alt="Koin">
+            <div class="price">Rp 35.000</div>
+          </div>
+        </div>
   
           <h2>Pilih Pembayaran</h2>
           <div class="payment-container">
@@ -442,7 +459,7 @@
           </div>
   
           <div class="button-container">
-              <button class="right-button">Beli</button>
+              <button class="right-button">Konfirmasi Pembayaran</button>
             </div>
           </div>
               
