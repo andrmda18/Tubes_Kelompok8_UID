@@ -1,6 +1,6 @@
 body,
 html {
-  background-color: #ffecbb;
+  background-color: #ffffff;
   font-family: "league spartan", sans-serif;
   margin: 0;
 }
@@ -20,7 +20,8 @@ html {
   left: 80px;
   width: calc(100% - 80px); /* Menghindari tumpang tindih */
   z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
-  background-color: #ffecbb; /* Tambahkan background agar tidak transparan */
+  background-color: #9cf4f9; /* Tambahkan background agar tidak transparan */
+  border-bottom: 3px solid #9cf4f9;
 }
 
 .banner {
