@@ -172,7 +172,9 @@
         .pembayaran{
           margin-top: 100px;
           margin-bottom: 100px;
-          text-align: center;
+          margin-left: 50px;
+          margin-right: 50px;
+          /* text-align: center; */
         }
 
         /* Gaya untuk judul */
@@ -180,7 +182,7 @@
           font-size: 1.2em;
           margin-bottom: 10px;
           font-weight: bold;
-          text-align: center;
+          /* text-align: center; */
           padding: 10px;
         }
 
@@ -189,8 +191,10 @@
         display: flex;
         gap: 10px;
         margin-bottom: 20px;
-        justify-content: center; /* Menjaga agar elemen-elemen berada di tengah secara horizontal */
-        text-align: center;
+        border-radius: 15px;
+        padding: 20px;
+        border-width: 2px;
+       
         }
 
         /* Kartu untuk setiap nominal */
@@ -238,21 +242,27 @@
         .pembayaran .payment-container {
             display: flex;
             gap: 10px;
-            text-align: center;
-            justify-content: center;
+            /* text-align: center;
+            justify-content: center; */
         }
 
         /* Tombol metode pembayaran */
         .payment-button {
-            text-align: center;
+            text-align: right;
             border: 1px solid #6499e9;
             border-radius: 5px;
             padding: 10px 20px;
             cursor: pointer;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            /* align-items: right;
+            justify-content: right; */
             transition: all 0.3s ease;
+        }
+
+        .payment-container{
+          border-radius: 15px;
+          padding: 20px;
+          border-width: 2px;
         }
 
         /* Efek hover pada metode pembayaran */
@@ -268,36 +278,30 @@
             height: auto;
         }
 
-        .button-submit{
-            text-align: right;
-            margin-top: 10px;
-            background-color: #6499e9;
-            
-        }
-
-        .button-container{
-            text-align: right;
+        /* Kontainer untuk tombol */
+        .button-container {
+            display: flex; /* Menggunakan flexbox untuk pemusatan */
+            justify-content: center; /* Memusatkan tombol secara horizontal */
             padding: 10px;
             margin: 10px;
         }
 
         /* Gaya untuk tombol */
         .right-button {
-        padding: 10px 20px; /* Mengatur ukuran dalam tombol */
-        font-size: 16px; /* Ukuran teks tombol */
-        color: #fff; /* Warna teks tombol */
-        background-color: #6499e9; /* Warna latar belakang tombol */
-        border: none; /* Menghilangkan border tombol */
-        border-radius: 5px; /* Membuat sudut tombol melengkung */
-        cursor: pointer; /* Menampilkan pointer saat tombol dihover */
-        transition: background-color 0.3s; /* Menambahkan efek transisi pada hover */
+            padding: 10px 20px; /* Mengatur ukuran dalam tombol */
+            font-size: 16px; /* Ukuran teks tombol */
+            color: #fff; /* Warna teks tombol */
+            background-color: #6499e9; /* Warna latar belakang tombol */
+            border: none; /* Menghilangkan border tombol */
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            cursor: pointer; /* Menampilkan pointer saat tombol dihover */
+            transition: background-color 0.3s; /* Menambahkan efek transisi pada hover */
         }
 
         /* Efek hover untuk tombol */
         .right-button:hover {
-        background-color: #0056b3; /* Warna tombol saat dihover */
+            background-color: #0056b3; /* Warna tombol saat dihover */
         }
-
 
     </style>
   </head>
@@ -397,7 +401,7 @@
 
 
           <div class="pembayaran">
-            <h2>Pilih nominal Koin</h2>
+            <h2>Pilih Nominal Koin</h2>
             <div class="nominal-container">
               <div class="nominal-card">
                   <img src="images/koin 1.png" alt="Koin">
