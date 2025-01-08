@@ -49,7 +49,6 @@
         width: calc(100% - 80px); /* Menghindari tumpang tindih */
         z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
         background-color: #f9f9f9; /* Tambahkan background agar tidak transparan */
-        /* box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1); */
       }
 
       .menu-item {
@@ -170,7 +169,6 @@
         }
       }
 
-
         .pembayaran{
           margin-top: 100px;
           margin-bottom: 100px;
@@ -178,19 +176,21 @@
         }
 
         /* Gaya untuk judul */
-        h2 {
+        .pembayaran h2 {
           font-size: 1.2em;
           margin-bottom: 10px;
           font-weight: bold;
+          text-align: center;
           padding: 10px;
         }
 
         /* Kontainer untuk kartu nominal */
         .nominal-container {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            text-align: center;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        justify-content: center; /* Menjaga agar elemen-elemen berada di tengah secara horizontal */
+        text-align: center;
         }
 
         /* Kartu untuk setiap nominal */
@@ -235,13 +235,16 @@
         }
 
         /* Kontainer untuk metode pembayaran */
-        .payment-container {
+        .pembayaran .payment-container {
             display: flex;
             gap: 10px;
+            text-align: center;
+            justify-content: center;
         }
 
         /* Tombol metode pembayaran */
         .payment-button {
+            text-align: center;
             border: 1px solid #6499e9;
             border-radius: 5px;
             padding: 10px 20px;
