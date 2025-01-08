@@ -181,20 +181,21 @@
   background-color: white;
   border-radius: 10px; /* Sudut membulat */
   overflow: hidden; /* Sembunyikan konten keluar dari grid */
-  padding: 10px; /* Padding dalam item */
+  padding: 3px; /* Padding dalam item */
   text-align: center; /* Teks rata tengah */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Bayangan lembut */
   position: relative; /* Untuk elemen dengan posisi absolut di dalamnya */
   height: 250px; /* Tinggi tetap item */
-  width: 300px;
+  width: 170px;
   position: relative;
   border: 5px solid #9cf4f9;
 }
 
 .grid-item img { /* Selektor untuk gambar dalam item grid */
   /* background-color: white; */
-  width: 100%; /* Gambar memenuhi lebar item */
-  height: 170px; /* Tinggi tetap gambar */
+  aspect-ratio: 3/4;
+  height: 200px;
+  width: auto;
   object-fit: cover; /* Isi gambar tanpa mengubah proporsi */
   object-position: center; /* Pusatkan gambar */
   border-radius: 8px; /* Sedikit membulatkan gambar */
@@ -320,7 +321,6 @@
               <div class="col"> 
                 <div class="grid-item">
                   <div class="info">
-                    <h5>10 Koin</h5>
                   <img src="images/koin 1.png" alt="Example 3">
                     <p>username</p>
                   </div>
@@ -330,7 +330,6 @@
               <div class="col"> 
                 <div class="grid-item">
                   <div class="info">
-                    <h5>20 Koin</h5>
                   <img src="images/koin 1.png" alt="Example 3">
                     <p>username</p>
                   </div>
@@ -340,7 +339,6 @@
               <div class="col"> 
                 <div class="grid-item">
                   <div class="info">
-                    <h5>50 Koin</h5>
                   <img src="images/koin 2.png" alt="Example 3">
                     <p>username</p>
                   </div>
@@ -350,7 +348,6 @@
               <div class="col"> 
                 <div class="grid-item">
                   <div class="info">
-                    <h5>100 Koin</h5>
                   <img src="images/koin 3.png" alt="Example 3">
                     <p>username</p>
                   </div>

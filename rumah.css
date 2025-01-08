@@ -20,8 +20,9 @@ html {
   left: 80px;
   width: calc(100% - 80px); /* Menghindari tumpang tindih */
   z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
-  background-color: #9cf4f9; /* Tambahkan background agar tidak transparan */
-  border-bottom: 3px solid #9cf4f9;
+  background-color: white; /* Tambahkan background agar tidak transparan */
+  /* border-bottom: 3px solid #9cf4f9; */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .banner {
@@ -110,6 +111,10 @@ html {
   border-radius: 15px;
 }
 
+.nav-profile span{
+  text-decoration: none;
+}
+
 .category-header {
   margin-top: 30px;
 }
@@ -168,31 +173,24 @@ html {
   color: #007bff; /* Warna panah */
 }
 
-/* Kontainer kartu */
-.card-container {
-  padding: 50px;
-  gap: 50px; /* Jarak antar kartu */
-  display: flex; /* Mengatur elemen di dalamnya agar menggunakan layout flexbox */
-  align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
-  justify-content: center; /* Menyelaraskan elemen secara horizontal di tengah */
-}
+
 
 /* Setelan kartu */
 .card {
   background-color: #fff;
-  border: 2px solid black;
+  /* border: px solid black; */
   border-radius: 10px;
-  border-color: black;
-  border-width: 3px;
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 280px;
   overflow: hidden;
   padding-bottom: 10px;
 }
 
-.card:hover {
-  background-color: #e7e7e7;
+.card :hover{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Header kartu */
 .card-header {
