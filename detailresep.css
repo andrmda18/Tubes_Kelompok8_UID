@@ -88,8 +88,6 @@
   .container {
     /* background-color: white; Warna latar belakang kontainer */
     padding: 16px; /* Menambahkan padding di dalam kontainer */
-    border-radius: 12px; /* Membuat sudut kontainer menjadi bulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus */
     display: flex; /* Menggunakan Flexbox untuk tata letak */
     flex-direction: column; /* Menata konten secara vertikal */
     align-items: center; /* Mengatur konten agar terpusat secara horizontal */
