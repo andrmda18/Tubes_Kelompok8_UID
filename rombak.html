@@ -28,7 +28,7 @@
     <style>
       body,
       html {
-        background-color: #ffecbb;
+        background-color: #f9f9f9;
         font-family: "league spartan", sans-serif;
         margin: 0;
       }
@@ -48,7 +48,8 @@
         left: 80px;
         width: calc(100% - 80px); /* Menghindari tumpang tindih */
         z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
-        background-color: #ffecbb; /* Tambahkan background agar tidak transparan */
+        background-color: #f9f9f9; /* Tambahkan background agar tidak transparan */
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
       }
 
       .menu-item {
@@ -169,55 +170,129 @@
         }
       }
 
-      
-/* Gaya grid item */
-.grid-item:hover { /* Gaya item grid saat hover */
-  background-color: #9cf4f9 ; /* Warna latar biru muda */
-  border: 4px solid #9cf4f9;
-}
 
-.grid-item { /* Selektor untuk item grid */
-  margin-top: 100px;
-  background-color: white;
-  border-radius: 10px; /* Sudut membulat */
-  overflow: hidden; /* Sembunyikan konten keluar dari grid */
-  padding: 3px; /* Padding dalam item */
-  text-align: center; /* Teks rata tengah */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Bayangan lembut */
-  position: relative; /* Untuk elemen dengan posisi absolut di dalamnya */
-  height: 250px; /* Tinggi tetap item */
-  width: 170px;
-  position: relative;
-  border: 5px solid #9cf4f9;
-}
+        .pembayaran{
+          margin-top: 100px;
+          margin-bottom: 100px;
+          text-align: center;
+        }
 
-.grid-item img { /* Selektor untuk gambar dalam item grid */
-  /* background-color: white; */
-  aspect-ratio: 3/4;
-  height: 200px;
-  width: auto;
-  object-fit: cover; /* Isi gambar tanpa mengubah proporsi */
-  object-position: center; /* Pusatkan gambar */
-  border-radius: 8px; /* Sedikit membulatkan gambar */
-  border: 2px solid #9cf4f9;
-}
+        /* Gaya untuk judul */
+        h2 {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+        }
 
+        /* Kontainer untuk kartu nominal */
+        .nominal-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-.grid-item .info { /* Selektor untuk informasi dalam grid */
-  margin-top: 10px; /* Jarak atas dari gambar */
-}
+        /* Kartu untuk setiap nominal */
+        .nominal-card {
+            width: 120px;
+            padding: 3px;
+            background-color: #6499e9;
+            border: 2px solid #6499e9;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
 
-.grid-item .info h5 { /* Selektor untuk judul informasi */
-  font-size: 20px; /* Ukuran font besar */
-  font-weight: bold; /* Teks tebal */
-  margin: 0; /* Menghapus margin default */
-}
+        .nominal-card img{
+            background-color: white;
+        }
 
-.grid-item .info p { /* Selektor untuk deskripsi dalam informasi */
-  font-size: 14px; /* Ukuran font */
-  color: #666; /* Warna teks abu-abu */
-  margin: 0; /* Menghapus margin default */
-}
+        /* Efek hover pada kartu nominal */
+        .nominal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5 );
+            color: white;
+        }
+
+        /* Tampilan jumlah koin */
+        .nominal-card .coins {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Tampilan harga */
+        .nominal-card .price {
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        /* Gambar dalam kartu nominal */
+        .nominal-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Kontainer untuk metode pembayaran */
+        .payment-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Tombol metode pembayaran */
+        .payment-button {
+            border: 1px solid #6499e9;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Efek hover pada metode pembayaran */
+        .payment-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5 );
+            color: white;
+        }
+
+        /* Gambar pada tombol pembayaran */
+        .payment-button img {
+            max-width: 60px;
+            height: auto;
+        }
+
+        .button-submit{
+            text-align: right;
+            margin-top: 10px;
+            background-color: #6499e9;
+            
+        }
+
+        .button-container{
+            text-align: right;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Gaya untuk tombol */
+        .right-button {
+        padding: 10px 20px; /* Mengatur ukuran dalam tombol */
+        font-size: 16px; /* Ukuran teks tombol */
+        color: #fff; /* Warna teks tombol */
+        background-color: #6499e9; /* Warna latar belakang tombol */
+        border: none; /* Menghilangkan border tombol */
+        border-radius: 5px; /* Membuat sudut tombol melengkung */
+        cursor: pointer; /* Menampilkan pointer saat tombol dihover */
+        transition: background-color 0.3s; /* Menambahkan efek transisi pada hover */
+        }
+
+        /* Efek hover untuk tombol */
+        .right-button:hover {
+        background-color: #0056b3; /* Warna tombol saat dihover */
+        }
+
 
     </style>
   </head>
@@ -315,46 +390,53 @@
           </div>
           <!-- header end -->
 
-          <div class="container my-4">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-              <!-- Grid Item 1 -->
-              <div class="col"> 
-                <div class="grid-item">
-                  <div class="info">
-                  <img src="images/koin 1.png" alt="Example 3">
-                    <p>username</p>
-                  </div>
-                </div>
+
+          <div class="pembayaran">
+            <h2>Pilih nominal Koin</h2>
+            <div class="nominal-container">
+              <div class="nominal-card">
+                  <img src="images/koin 1.png" alt="Koin">
+                  <div class="price">Rp 12.000</div>
               </div>
-              <!-- Grid Item 2 -->
-              <div class="col"> 
-                <div class="grid-item">
-                  <div class="info">
-                  <img src="images/koin 1.png" alt="Example 3">
-                    <p>username</p>
-                  </div>
-                </div>
+              <div class="nominal-card">
+                  <img src="images/koin 2.png" alt="Koin">
+                  <div class="price">Rp 12.000</div>
               </div>
-              <!-- Grid Item 3 -->
-              <div class="col"> 
-                <div class="grid-item">
-                  <div class="info">
-                  <img src="images/koin 2.png" alt="Example 3">
-                    <p>username</p>
-                  </div>
-                </div>
+              <div class="nominal-card">
+                  <img src="images/koin 3.png" alt="Koin">
+                  <div class="price">Rp 12.000</div>
               </div>
-              <!-- grid item 4 -->
-              <div class="col"> 
-                <div class="grid-item">
-                  <div class="info">
-                  <img src="images/koin 3.png" alt="Example 3">
-                    <p>username</p>
-                  </div>
-                </div>
+              <div class="nominal-card">
+                  <img src="images/koin 4.png" alt="Koin">
+                  <div class="price">Rp 12.000</div>
+              </div>
+              <div class="nominal-card">
+                  <img src="images/koin 5.png" alt="Koin">
+                  <div class="price">Rp 12.000</div>
               </div>
             </div>
+  
+          <h2>Pilih Pembayaran</h2>
+          <div class="payment-container">
+            <div class="payment-button">
+                <img src="images/qris.png" alt="qris">
+            </div>
+            <div class="payment-button">
+                <img src="images/bri.png " alt="BRI">
+            </div>
+            <div class="payment-button">
+                <img src="images/bca.png" alt="BCA">
+            </div>
+            <div class="payment-button">
+              <img src="images/mandiri.png" alt="mandiri">
+            </div>
           </div>
+  
+          <div class="button-container">
+              <button class="right-button">Beli</button>
+            </div>
+          </div>
+              
         </div>
       </div>
     </div>
