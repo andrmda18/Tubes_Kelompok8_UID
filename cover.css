@@ -33,13 +33,15 @@ body {
 }
 
 .hero-container {
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertikal rata tengah */
+  justify-content: space-between; /* Spasi di antara teks dan gambar */
   background-color: #f9f9f9;
+  height: 85vh; /* Tinggi hero */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding-top: 2px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .button {
@@ -55,15 +57,23 @@ body {
 .button:hover {
   background-color: #a3e3f0;
 }
+.image-section {
+  display: flex;
+  justify-content: center; /* Gambar berada di tengah secara horizontal */
+  align-items: center; /* Gambar berada di tengah secara vertikal */
+  height: 100%; /* Tinggi penuh sesuai container */
+}
+
 .image-section img {
-  max-width: 80%;
+  margin: 0; /* Hilangkan margin default */
+  padding: 0;
+  max-width: 100%;
   height: auto;
-  margin-left: 70px;
-  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
+  padding: 0;
+  margin: 0;
   background-color: transparent;
 }
 .navbar-nav .nav-link {
@@ -150,10 +160,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #a3e3f0; */
+  background-color: #a3e3f0;
   padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* border-radius: 10px; */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
 }
 
 /* Logo */
@@ -184,7 +194,7 @@ body {
 footer {
   text-align: center;
   padding: 20px 0;
-  /* background-color: #a3e3f0; Warna lebih tua */
+  background-color: #a3e3f0;
   color: #555; /* Warna teks */
   font-size: 0.9rem;
   margin-top: 30px;
