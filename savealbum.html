@@ -190,7 +190,8 @@
       }
 
       .card:hover{
-        background-color: #9cf4f9;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
       }
 
       .card img {
@@ -216,6 +217,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
+        padding: 5px;
       }
 
       .card-images img {
@@ -223,7 +225,7 @@
         height: auto;
         aspect-ratio: 1 / 1; /* Menjaga rasio 1:1 */
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 10px;
       }
 
       .button-container {
@@ -244,17 +246,19 @@
         cursor: pointer;
         background-color: #ffff;
         height: 70px;
-        border: 3px solid black;
+        /* border: 3px solid black; */
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
       }
 
       .button:last-child {
-        background-color: #9cf4f9;
+        background-color: #6499e9;
+        color: white;
       }
 
       .button:hover {
-        background-color: #9cf4f9;
+        background-color: #6499e9;
+        color: white;
       }
 
       @media (max-width: 768px) {
