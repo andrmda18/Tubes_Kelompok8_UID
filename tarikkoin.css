@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Warna latar sidebar */
+.bg-light-blue {
+    background-color: #d3f0f7;
+    width: 200px;
+    height: 100vh;
+}
+
+/* Warna latar konten utama */
+.bg-yellow {
+    background-color: #ffecbb;
+    border: 2px solid #00a1d7;
+    border-radius: 10px;
+}
+
+/* Styling sidebar */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    border-bottom: 2px solid #ddd;
+}
+
+.search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Section Detail */
+.detail-row {
+    padding: 5px 0;
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
