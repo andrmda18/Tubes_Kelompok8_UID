@@ -25,28 +25,46 @@
     />
   </head>
   <body>
-    <div class="container mt-4">
+    <div class="container-utama mt-4">
       <div class="hero-container row align-items-center">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">
-            <img alt="Foodie" height="40" src="images/Logobaru.png" width="40" />
-          </a>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about"> About </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resep"> Resep </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kontak"> Kontak </a>
-              </li>
-            </ul>
-            <a href="login.html" class="button">Login</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                alt="Foodie"
+                height="40"
+                src="images/Logobaru.png"
+                width="40"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#resep">Resep</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+              </ul>
+              <a href="login.html" class="button">Login</a>
+            </div>
           </div>
         </nav>
         <!-- Bagian teks -->
@@ -165,7 +183,7 @@
               alt="Profile Picture"
               class="profile-picture"
             />
-            <span class="username">Samuel123</span>
+            <span class="username">Samuel1223</span>
           </div>
           <img
             src="images/smoothie-bowl.jpg"
@@ -193,7 +211,7 @@
               alt="Profile Picture"
               class="profile-picture"
             />
-            <span class="username">michele112</span>
+            <span class="username">Samuel1223</span>
           </div>
           <img
             src="images/nasi hainan.jpg"
@@ -221,7 +239,7 @@
               alt="Profile Picture"
               class="profile-picture"
             />
-            <span class="username">daewon332</span>
+            <span class="username">Samuel1223</span>
           </div>
           <img src="images/dawet.jpg" alt="Dawet" class="card-image" />
           <div class="card-body">
@@ -245,7 +263,7 @@
               alt="Profile Picture"
               class="profile-picture"
             />
-            <span class="username">syaudi21</span>
+            <span class="username">Samuel1223</span>
           </div>
           <img src="images/ramen.jpg" alt="Ramen" class="card-image" />
           <div class="card-body">
@@ -266,40 +284,44 @@
     <!-- footer start -->
     <!-- Footer -->
     <footer>
-      <div class="footer text-white pt-5">
-        <div class="container-fluid">
-          <!-- Ganti "container" jadi "container-fluid" -->
+      <div class="footer text-black pt-5">
+        <div class="container content-container">
           <div class="row">
             <div class="col-lg-4">
-              <h5>Story</h5>
+              <h5>Foodie</h5>
               <p>
-                Penyewaan baju adat di sekitar Bandung. Temukan koleksi baju
-                adat terbaik untuk berbagai acara tradisional dengan kemudahan
-                sewa.
+                Aplikasi penyedia resep masakan yang menghadirkan inspirasi
+                kuliner unutk semua selera. Dari masakan rumahan hinga kreasi,
+                temukan cara baru untuk menikmati makanan setiap hari.
               </p>
             </div>
             <div class="col-lg-4">
               <h5>Menu</h5>
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-                <li><a href="sale.html">Sale</a></li>
-                <li><a href="myorder.html">My Orders</a></li>
-                <li><a href="shop.html">Shop</a></li>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resep">Resep</a></li>
+                <li><a href="#kontak">kontak</a></li>
               </ul>
             </div>
             <div class="col-lg-4">
               <h5>Kontak Kami</h5>
               <p>Alamat: Bandung, Jawa Barat</p>
-              <p>Email: info@story.com</p>
-              <p>Telepon: +62 812 3456 7890</p>
-              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+              <p>Email:foodieapps@gmail.com</p>
+              <p>Telepon: +62 812 9876 5430</p>
+              <div>
+                <a href="#" class="text-dark me-2"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="text-dark me-2"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+              </div>
             </div>
           </div>
           <div class="text-center pt-3">
-            <p>© 2024 Story - Penyewaan Baju Adat. All Rights Reserved.</p>
+            <p>© 2024 Foodie - Penyedia Resep Masakan. All Rights Reserved.</p>
           </div>
         </div>
       </div>

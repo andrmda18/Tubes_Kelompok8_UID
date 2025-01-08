@@ -2,23 +2,25 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Gaya latar belakang utama */
 body {
-  background: linear-gradient(to bottom, #a3e3f0 10%, #ffecb3 100%);
+  background: linear-gradient(to bottom, #6499e9 10%, #ffffff 100%);
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 /* Container utama */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 90vh; /* Tinggi layar penuh */
+.container-utama {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
 }
 /* Gaya teks */
 .text-section {
@@ -33,15 +35,11 @@ body {
 }
 
 .hero-container {
-  margin: 0;
   display: flex;
   align-items: center; /* Vertikal rata tengah */
   justify-content: space-between; /* Spasi di antara teks dan gambar */
-  background-color: #f9f9f9;
-  height: 85vh; /* Tinggi hero */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 80vh; /* Kurangi tinggi hero */
   border-radius: 10px;
-  padding: 2rem;
 }
 
 .button {
@@ -155,17 +153,6 @@ body {
   margin: 0 auto; /* Untuk membuat gambar berada di tengah jika diperlukan */
 }
 
-/* Container utama */
-.content-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a3e3f0;
-  padding: 50px;
-  /* border-radius: 10px; */
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
-}
-
 /* Logo */
 .logo-section img {
   width: 150px; /*logo */
@@ -194,10 +181,18 @@ body {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #a3e3f0;
-  color: #555; /* Warna teks */
+  color: #555;
   font-size: 0.9rem;
   margin-top: 30px;
+}
+
+.content-container {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .category-header {
