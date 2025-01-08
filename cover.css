@@ -18,43 +18,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh; /* Tinggi layar penuh */
-  padding: 0 50px;
+  height: 90vh; /* Tinggi layar penuh */
 }
-
 /* Gaya teks */
 .text-section {
   color: #000; /* Warna teks hitam */
-  font-size: 2.5rem; /* Ukuran teks besar */
+  font-size: 0.5rem; /* Ukuran teks besar */
   font-weight: bold;
-}
-
-/* Tombol */
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #e60a14; /* Warna merah */
-  color: #ffffff; /* Warna teks putih */
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none; /* Menghilangkan garis bawah */
-  border-radius: 50px; /* Membuat tombol oval */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
-}
-
-/* Tambahan panah pada tombol */
-.button::after {
-  content: " ➜";
-  font-size: 1rem;
-}
-
-/* Gaya gambar */
-.image-section img {
-  max-width: 350px; /* Lebar maksimum gambar */
-  height: auto; /* Menjaga proporsi gambar */
-  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Efek bayangan */
 }
 
 .object-fit-md-contain {
@@ -62,6 +32,105 @@ body {
   height: auto; /* Tinggi gambar disesuaikan proporsional */
 }
 
+.hero-container {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  text-decoration: none;
+  /*background-color: #007bff;
+  */
+  color: black;
+  border: 2px solid #a3e3f0;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #a3e3f0;
+}
+.image-section img {
+  max-width: 80%;
+  height: auto;
+  margin-left: 70px;
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #a3e3f0;
+}
+.navbar-brand img {
+  height: 40px;
+}
+
+/* .food-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+.food-category {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+.food-categories {
+  display: flex;
+  flex-wrap: wrap; /* Membungkus elemen ke baris baru */
+  gap: 5px; /* Menambahkan jarak antar kategori */
+  justify-content: space-evenly; /* Menjaga jarak yang merata antar kategori */
+}
+
+.food-category {
+  display: flex;
+  flex-direction: row;
+  /*Menempatkangambardanteksdisamping*/
+  align-items: center;
+  /*Menjagaagargambardantekssejajarsecaravertikal*/
+  padding: 10px;
+  /*Menambahkanpaddingagarkontentidakterlalurapat*/
+  text-align: center;
+  border: 1px solid #ddd;
+  /*Menambahkanborder(opsional)*/
+  border-radius: 30px;
+}
+
+.food-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
+}
+.food-category img {
+  width: 30px;
+  height: 30px;
+}
+.food-category span {
+  padding-left: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
 /* .content-container:hover{
     background-color: #f5f5f5;
     box-shadow: 0 10px 20px rgba(0, 0,0.4);
@@ -69,7 +138,7 @@ body {
   } */
 
 /* Ukuran foto lebih kecil */
-#about img {
+#kategori img {
   width: 150px; /* Mengatur lebar gambar */
   height: auto; /* Menjaga aspek rasio gambar */
   object-fit: contain; /* Menjaga gambar agar tetap terlihat rapi */
@@ -81,6 +150,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: #a3e3f0; */
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -114,57 +184,54 @@ body {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #a3e3f0; /* Warna lebih tua */
+  /* background-color: #a3e3f0; Warna lebih tua */
   color: #555; /* Warna teks */
   font-size: 0.9rem;
   margin-top: 30px;
 }
 
-.category-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px; /* Jarak antar kartu */
+.category-header {
+  margin-top: 30px;
 }
 
-.category-header {
-  text-align: left; /* Mengatur teks di tengah */
-  margin-bottom: 20px; /* Jarak antara teks dan kartu */
-  margin-left: 55px;
+.category-header h1 {
+  font-size: 2.5rem;
 }
 
 .category-card {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #f5faff; /* Warna latar belakang */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  width: 200px; /* Lebar kartu */
-  height: 100px;
+  width: 100%; /* Lebar 100% agar menyesuaikan dengan kolom Bootstrap */
+  max-width: 250px; /* Lebar maksimum */
+  height: 75px;
+  margin: 0 auto; /* Agar berada di tengah kolom */
+  text-align: center; /* Menjaga teks di dalam kartu agar terpusat */
 }
 
 .category-card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
-  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
 }
 
 .category-card img {
   width: 50px; /* Ukuran ikon */
   height: 50px;
-  margin-right: 2px; /* Margin kanan untuk memindahkan gambar sedikit ke kanan */
+  margin-left: 10px; /* Margin kanan untuk memindahkan gambar sedikit ke kanan */
 }
 
 .category-card .info {
   display: flex;
   flex-direction: column;
+  padding-left: 5px;
   /* justify-content: center; */
 }
 
 .category-card .info h5 {
   margin: 0;
-  padding-left: 10px;
   font-size: 16px;
   font-weight: bold;
   color: #333;

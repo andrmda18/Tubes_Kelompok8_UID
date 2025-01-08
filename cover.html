@@ -19,136 +19,143 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap"
+    />
   </head>
   <body>
-    <div class="container">
-      <!-- Bagian teks -->
-      <section id="hero-banner">
-        <h1 class="text-section">Lorem ipsum</h1>
-        <p style="max-width: 600px">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          similique, atque voluptatibus quia dicta eligendi ipsa eum quaerat
-          possimus nostrum laudantium? Repudiandae nemo sapiente, fugit
-          necessitatibus cum reprehenderit molestiae quod.
-        </p>
-        <a href="login.html" class="button">Start</a>
-      </section>
+    <div class="container mt-2">
+      <div class="hero-container row align-items-center">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img alt="Foodie" height="40" src="images/LOGO.png" width="40" />
+          </a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resep"> Resep </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kontak"> Kontak </a>
+              </li>
+            </ul>
+            <a href="login.html" class="button">Login</a>
+          </div>
+        </nav>
+        <!-- Bagian teks -->
+        <section id="hero-banner" class="col-md-6">
+          <p style="font-size: 52px; font-weight: bold">Foodie</p>
+          <p
+            style="
+              max-width: 600px;
+              font-family: 'Satisfy', cursive;
+              font-size: 30px;
+              color: #f09133;
+            "
+          >
+            find or create your own food recipe
+          </p>
+          <div class="food-categories">
+            <div class="food-category">
+              <img alt="Ayam" src="images/christmas-dinner.png" />
+              <span> Lauk </span>
+            </div>
+            <div class="food-category">
+              <img alt="Frensch Fries Icon" src="images/french-fries.png" />
+              <span> Cemilan </span>
+            </div>
+            <div class="food-category">
+              <img alt="Dessert Icon" src="images/donut.png" />
+              <span> Dessert </span>
+            </div>
+            <div class="food-category">
+              <img alt="Drink Icon" src="images/drink.png" />
+              <span> Minuman </span>
+            </div>
+            <div class="food-category">
+              <img alt="Dessert Icon" src="images/salad.png" />
+              <span> Buah </span>
+            </div>
+          </div>
+        </section>
 
-      <!-- Bagian gambar -->
-      <div class="image-section">
-        <img src="images/mangkok.png" alt="Gambar Makanan" />
+        <!-- Bagian gambar -->
+        <div class="image-section col-md-6 text-center">
+          <img src="images/mangkok.png" alt="Gambar Makanan" />
+        </div>
       </div>
     </div>
 
-    <section id="foodie">
-      <div class="category-header">
-        <h1 class="text-info-emphasis fw-bold display-4 pb-5">
-          Ada apa aja di Foodie?
-        </h1>
-      </div>
-      <div class="category-container">
-        <!-- <h1 class="text-info-emphasis fw-bold display-4 pb-5">Ada apa aja di Foodie?</h1> -->
-        <!-- Kartu 1 -->
-        <div class="category-card">
-          <img src="images/coverkoin.png" alt="fitur koin" />
-          <div class="info">
-            <h5>KOIN</h5>
-          </div>
-        </div>
-
-        <!-- Kartu 2 -->
-        <div class="category-card">
-          <img src="images/reseplengkap.png" alt="fitur ressep" />
-          <div class="info">
-            <h5>RESEP LENGKAP</h5>
-          </div>
-        </div>
-
-        <!-- Kartu 3 -->
-        <div class="category-card">
-          <img src="images/komunitas.png" alt="komunitas" />
-          <div class="info">
-            <h5>KOMUNITAS</h5>
-          </div>
-        </div>
-
-        <!-- Kartu 4 -->
-        <div class="category-card">
-          <img src="images/ebook.png" alt="e-book" />
-          <div class="info">
-            <h5>E-BOOK</h5>
-          </div>
-        </div>
-
-        <!-- Kartu 5 -->
-        <div class="category-card">
-          <img src="images/coverkoin.png" alt="fitur koin" />
-          <div class="info">
-            <h5>KOIN</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="p-5 text-center">
+    <section id="about" class="pt-1 text-center">
       <h1 class="text-info-emphasis fw-bold display-4 pb-5">About</h1>
-      <div class="row">
-        <div class="p-2 col-md">
-          <img
-            src="images/coverfood1.png"
-            class="object-fit-md-contain"
-            alt="..."
-            width="250"
-          />
-          <h2 class="p-2">Dessert</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. F</p>
-        </div>
-        <div class="p-2 col-md">
-          <img
-            src="images/coverfood2.png"
-            class="object-fit-md-contain"
-            alt="..."
-            width="250"
-          />
-          <h2 class="p-2">gorengan</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla
-            voluptatibus ab dolore officia, provident sint laboriosam harum qui
-            modi
-          </p>
-        </div>
-        <div class="p-2 col-md">
-          <img
-            src="images/coverfood3.png"
-            class="object-fit-md-contain"
-            alt="..."
-            width="250"
-          />
-          <h2 class="p-2">Tradisional</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla
-            voluptatibus ab dolore officia, provident sint laboriosam harum qui
-            modi
-          </p>
-        </div>
-        <div class="p-2 col-md">
-          <img
-            src="images/coverfood4.png"
-            class="object-fit-md-contain"
-            alt="..."
-            width="250"
-          />
-          <h2 class="p-2">coffee</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nulla
-            voluptatibus ab dolore officia, provident sint laboriosam harum qui
-            modi
-          </p>
+      <div class="container-fluid">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+        >
+          <!-- Kartu 1 -->
+          <div class="col">
+            <div class="category-card">
+              <img
+                src="images/coverkoin.png"
+                alt="fitur koin"
+                class="img-fluid"
+              />
+              <div class="info">
+                <h5>KOIN</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 2 -->
+          <div class="col">
+            <div class="category-card">
+              <img
+                src="images/reseplengkap.png"
+                alt="fitur ressep"
+                class="img-fluid"
+              />
+              <div class="info">
+                <h5>RESEP</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 3 -->
+          <div class="col">
+            <div class="category-card">
+              <img
+                src="images/komunitas.png"
+                alt="komunitas"
+                class="img-fluid"
+              />
+              <div class="info">
+                <h5>KOMUNITAS</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 4 -->
+          <div class="col">
+            <div class="category-card">
+              <img src="images/ebook.png" alt="e-book" class="img-fluid" />
+              <div class="info">
+                <h5>E-BOOK</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="profile">
+    <section id="resep" class="pt-5 text-center">
+      <h1 class="text-info-emphasis fw-bold display-4">Resep</h1>
       <div class="card-container">
         <!-- Kartu 1 -->
         <div class="card">
@@ -257,7 +264,7 @@
     </section>
 
     <!-- footer start -->
-    <footer>
+    <footer id="kontak">
       <div class="content-container">
         <!-- Logo di sebelah kiri -->
         <div class="logo-section">
