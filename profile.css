@@ -9,7 +9,7 @@ html {
   margin-left: 100px; /* Menambahkan margin kiri untuk memberikan ruang di samping sidebar */
   margin-right: 20px;
   padding: 20px;
-  width: calc(100% - 80px); /* Menghindari tumpang tindih */
+  width: calc(100% - 120px); /* Menghindari tumpang tindih */
   overflow-y: auto; /* Agar konten utama scrollable */
 }
 
@@ -168,9 +168,54 @@ html {
 
 .actions {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+  padding: 10px 20px;
+  position: relative; /* Membuat posisi relatif untuk anak elemen */
+}
+
+.left-content {
+  text-align: left;
+  margin-left: 250px;
+}
+
+.icons {
+  display: flex;
+  padding: 5px 0;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.icons span {
+  display: flex;
+  align-items: center;
+  color: #333; /* Text color */
+}
+
+.icons i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.icons span:hover {
+  color: #6499e9;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.actions::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%; /* Menempatkan garis di tengah */
+  width: 900%; /* Setengah lebar layar */
+  border-bottom: 2px solid #9eddff; /* Garis bawah */
+}
+
+.right-content {
+  text-align: right;
 }
 
 .tombol {
@@ -186,6 +231,101 @@ html {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
   background-color: #6499e9;
+}
+
+.profile-header {
+  text-align: center;
+  padding: 10px;
+}
+.profile-header h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.profile-header .stars {
+  color: #ffd700;
+  font-size: 20px;
+}
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 2px 0;
+}
+.profile-stats div {
+  text-align: center;
+}
+.profile-stats div h2 {
+  font-size: 24px;
+  margin: 0;
+}
+.profile-stats div p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.posts {
+  padding: 8px;
+}
+
+.posts h2 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.posts img {
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.profile-container {
+  width: 100%; /* Pastikan lebar kontainer 100% */
+  max-width: 100%; /* Pastikan tidak melampaui lebar layar */
+  overflow: hidden; /* Menyembunyikan konten yang melampaui */
+}
+
+.suggested-profile {
+  background-color: #b2f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden; /* Menghindari overflow horizontal */
+  max-width: 100%; /* Pastikan lebar tidak melampaui kontainer */
+  flex-wrap: wrap; /* Memungkinkan elemen membungkus jika ruang terbatas */
+}
+
+.suggested-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.suggested-profile .info {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.suggested-profile .info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.suggested-profile .info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.follow-btn:hover {
+  background-color: #007fad;
+  color: white;
+  /* transform: scale(1.05); */
 }
 
 /* profile css end */

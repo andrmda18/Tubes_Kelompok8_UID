@@ -1,306 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Food Fusion</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggested Profile</title>
     <link
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-    />gabisa 
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        background-color: #ff6f61;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        background-color: #fff5e1;
-        border-radius: 15px;
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 1200px;
-        position: relative;
-      }
-      .navbar {
-        background-color: transparent;
-      }
-      .navbar-nav .nav-link {
-        color: #333;
-        font-weight: 500;
-        margin-right: 20px;
-      }
-      .navbar-nav .nav-link:hover {
-        color: #ff6f61;
-      }
-      .navbar-brand img {
-        height: 40px;
-      }
-      .login-btn {
-        background-color: #2ecc71;
-        color: white;
-        border-radius: 20px;
-        padding: 5px 15px;
-      }
-      .main-content {
+      .suggested-profile {
+        background-color: #b2f4ff;
+        padding: 15px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 50px 0;
+        margin-bottom: 20px;
       }
-      .main-content h1 {
-        font-size: 48px;
-        font-weight: 700;
-        color: #333;
-      }
-      .main-content p {
-        font-size: 18px;
-        color: #666;
-      }
-      .food-categories {
-        display: flex;
-        gap: 15px;
-        margin: 20px 0;
-      }
-      .food-category {
-        background-color: white;
-        border-radius: 50px;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      .food-category img {
-        height: 30px;
-      }
-      .promo-code {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 20px;
-      }
-      .promo-code input {
-        border-radius: 20px;
-        padding: 10px 20px;
-        border: 1px solid #ccc;
-        flex: 1;
-      }
-      .promo-code button {
-        background-color: #2ecc71;
-        color: white;
-        border-radius: 20px;
-        padding: 10px 20px;
-        border: none;
-      }
-      .food-image {
-        position: relative;
-      }
-      .food-image img {
+
+      .suggested-profile img {
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        width: 400px;
-        height: 400px;
         object-fit: cover;
       }
-      .discount-badge {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background-color: #2ecc71;
-        color: white;
-        border-radius: 50%;
-        padding: 20px;
-        font-size: 24px;
-        font-weight: 700;
+
+      .suggested-profile .info {
+        flex-grow: 1;
+        margin-left: 15px;
       }
-      .background-text {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 100px;
-        color: rgba(255, 255, 255, 0.1);
-        font-weight: 700;
+
+      .suggested-profile .info h3 {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .suggested-profile .info p {
+        margin: 0;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .follow-btn {
+        background-color: #00c4ff;
+        border: none;
+        border-radius: 20px;
+        padding: 5px 15px;
+        color: white;
+        font-size: 14px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .follow-btn:hover {
+        background-color: #007fad;
+        transform: scale(1.05);
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-          <img
-            alt="Food Fusion Logo"
-            height="40"
-            src="https://storage.googleapis.com/a1aa/image/66jr3oIwleVEOa8yQHYu07W4FVC3NX1YQAM2UYEt7GO5UYBKA.jpg"
-            width="40"
-          />
-        </a>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Menu </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Orders </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Delivery </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Contact </a>
-            </li>
-          </ul>
-          <button class="login-btn">Login</button>
+    <div class="container mt-4">
+      <div class="suggested-profile">
+        <img
+          alt="Profile picture of amber ruby"
+          src="https://storage.googleapis.com/a1aa/image/k55CTUfDTF1NPKqo0OfHSSNxiyvWFpwZwKWLfsy5FKsILNGoA.jpg"
+        />
+        <div class="info">
+          <h3>amber ruby</h3>
+          <p>134 Following</p>
+          <p>2,345 Followers</p>
         </div>
-      </nav>
-      <div class="main-content">
-        <div>
-          <h1>The best delicious food</h1>
-          <p>that meets your needs</p>
-          <div class="food-categories">
-            <div class="food-category">
-              <img
-                alt="Salad Icon"
-                height="30"
-                src="https://storage.googleapis.com/a1aa/image/UemQ8L1lXzSrWSEDax2LqOj1FO201LAov907SyBqIVg6UYBKA.jpg"
-                width="30"
-              />
-              <span> Salad </span>
-            </div>
-            <div class="food-category">
-              <img
-                alt="Burger Icon"
-                height="30"
-                src="https://storage.googleapis.com/a1aa/image/loKhaGFXxHZPD5T33lr1UK6a95jLi6y0mffT4wIfKasvThFoA.jpg"
-                width="30"
-              />
-              <span> Burger </span>
-            </div>
-            <div class="food-category">
-              <img
-                alt="Pizza Icon"
-                height="30"
-                src="https://storage.googleapis.com/a1aa/image/EMjJnW9poOpMJts3SGueYpG460o9geMEYcjHJhtneMShThFoA.jpg"
-                width="30"
-              />
-              <span> Pizza </span>
-            </div>
-            <div class="food-category">
-              <img
-                alt="Drink Icon"
-                height="30"
-                src="https://storage.googleapis.com/a1aa/image/zTRFfgRrb8VMXKRK5MtTxCLhf3tIKFuMwyJSXrpKPcBvpwCUA.jpg"
-                width="30"
-              />
-              <span> Drink </span>
-            </div>
-            <div class="food-category">
-              <img
-                alt="Dessert Icon"
-                height="30"
-                src="https://storage.googleapis.com/a1aa/image/xW0AehuMITXkYSfbfu7WN7xg6eCMYLBlTYkOoGMydZj2mCLQB.jpg"
-                width="30"
-              />
-              <span> Dessert </span>
-            </div>
-          </div>
-          <div class="promo-code">
-            <input placeholder="Enter Zip Code" type="text" />
-            <button>
-              <i class="fas fa-arrow-right"> </i>
-            </button>
-          </div>
-        </div>
-        <div class="food-image">
-          <img
-            alt="Delicious Salad"
-            height="400"
-            src="https://storage.googleapis.com/a1aa/image/QA3PcKiZjtoBPNVVstZKMTjOLswuYdHbobetg4fNtiW0pwCUA.jpg"
-            width="400"
-          />
-          <div class="discount-badge">30% Off</div>
-        </div>
+        <button class="follow-btn">Follow</button>
       </div>
-      <div class="background-text">Salad</div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-<div class="hero-container row align-items-center">
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">
-      <img alt="Foodie" height="40" src="images/LOGO.png" width="40" />
-    </a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#"> Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about"> About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resep"> Resep </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#kontak"> Kontak </a>
-        </li>
-      </ul>
-      <a href="login.html" class="button">Login</a>
-    </div>
-  </nav>
-  <!-- Bagian teks -->
-  <section id="hero-banner" class="col-md-6">
-    <p style="font-size: 52px; font-weight: bold">Foodie</p>
-    <p
-      style="
-        max-width: 600px;
-        font-family: 'Satisfy', cursive;
-        font-size: 30px;
-        color: #f09133;
-      "
-    >
-      find or create your own food recipe
-    </p>
-    <div class="food-categories">
-      <div class="food-category">
-        <img alt="Ayam" src="images/christmas-dinner.png" />
-        <span> Lauk </span>
-      </div>
-      <div class="food-category">
-        <img alt="Frensch Fries Icon" src="images/french-fries.png" />
-        <span> Cemilan </span>
-      </div>
-      <div class="food-category">
-        <img alt="Dessert Icon" src="images/donut.png" />
-        <span> Dessert </span>
-      </div>
-      <div class="food-category">
-        <img alt="Drink Icon" src="images/drink.png" />
-        <span> Minuman </span>
-      </div>
-      <div class="food-category">
-        <img alt="Dessert Icon" src="images/salad.png" />
-        <span> Buah </span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bagian gambar -->
-  <div class="image-section col-md-6 text-center">
-    <img src="images/Landing page web.png" alt="Gambar Makanan" />
-  </div>
-</div>
