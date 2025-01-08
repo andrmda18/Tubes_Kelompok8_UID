@@ -82,8 +82,6 @@
   
 
 
-
-
   /* Mengatur styling untuk kontainer utama */
   .container {
     /* background-color: white; Warna latar belakang kontainer */
@@ -102,42 +100,41 @@
 
 /* Menata gambar utama */
 .main-image {
-    width: 400px; /* Lebar gambar utama */
-    height: 400px; /* Tinggi gambar utama */
+    width: 100%;
     object-fit: cover; /* Menjaga proporsi gambar agar menutupi seluruh area */
     border-radius: 12px; /* Membulatkan sudut gambar */
 }
 
-/* Menata kontainer thumbnail */
 .thumbnails {
-    display: flex; /* Menggunakan Flexbox untuk menata thumbnail */
-    justify-content: center; /* Memposisikan thumbnail di tengah secara horizontal */
-    margin-top: 16px; /* Memberikan jarak antara gambar utama dan thumbnail */
-    width: 100%; /* Memastikan lebar kontainer thumbnail 100% */
+  display: flex;
+  align-items: center;
 }
 
-/* Menata masing-masing thumbnail */
-.thumbnail {
-    width: 100px; /* Lebar thumbnail */
-    height: 100px; /* Tinggi thumbnail */
-    object-fit: cover; /* Menjaga proporsi gambar thumbnail */
-    border-radius: 12px; /* Membulatkan sudut thumbnail */
-    margin: 0 4px; /* Memberikan jarak antar thumbnail */
-}
-
-/* Menata tombol navigasi */
 .nav-button {
-    background: none; /* Menghilangkan latar belakang tombol */
-    border: none; /* Menghilangkan border tombol */
-    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
-    outline: none; /* Menghilangkan outline saat tombol terfokus */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-/* Menata ikon dalam tombol navigasi */
-.nav-button i {
-    font-size: 24px; /* Ukuran ikon */
-    color: #6b7280; /* Warna ikon */
+.flex {
+  display: flex;
+  gap: 10px; /* Memberikan jarak antar gambar */
+  overflow-x: auto; /* Jika gambar banyak, memungkinkan scroll horizontal */
 }
+
+.thumbnail {
+  width: 80px; /* Menyesuaikan ukuran gambar */
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 
 /* Menata konten detail */
 .details {
@@ -145,6 +142,7 @@
     flex-direction: column; /* Menata elemen secara vertikal */
     gap: 16px; /* Memberikan jarak antar elemen di dalam detail */
     margin-top: 16px; /* Memberikan jarak di bagian atas detail */
+    margin-left: 50px;
 }
 
 /* Menata judul utama pada detail */
@@ -235,6 +233,23 @@
   .details .info i {
     color: #6B7280; /* Warna ikon */
   }
+
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.nav-button i {
+    vertical-align: middle;
+}
   
   /* Menata span dalam elemen info */
   .details .info span {
@@ -301,12 +316,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     overflow: hidden;
+    padding: 5px;
   }
   .step img {
     width: 20%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    padding-left: 5px;
   }
   .step-content {
     padding: 15px;
@@ -321,3 +338,172 @@
     font-size: 16px;
     color: #333;
   }
+
+
+
+
+  
+  /* interaksi */
+  .wrapper {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .box {
+    background-color: #f9f9f9;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+
+  .stars {
+  font-size: 30px;
+  display: inline-block;
+  }
+
+  .star {
+  cursor: pointer;
+  color: lightgray;
+  transition: color 0.3s ease;
+  }
+
+  /* Hover effect for individual star and all previous stars */
+  .star:hover,
+  .star:hover ~ .star {
+  color: gold;
+  }
+
+
+  .stars, .coins {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .stars .star {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .coins .coin {
+    background-color: #ffeab9;
+    border: 2px solid #ffcb6b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .button {
+  background-color: #f9f9f9;
+  border-color: #6499e9;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  align-items: center;
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: center; /* Menyusun teks secara horizontal */
+  align-items: center; /* Menyusun teks secara vertikal */
+}
+
+
+  .button:hover {
+    background-color: #6499e9;
+    color: white;
+  }
+
+
+  .comment-container {
+          padding: 20px;
+          margin-left: 100px;
+          margin-right: 100px;
+      }
+      .icons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+      }
+      .left-icons {
+          display: flex;
+          gap: 10px;
+      }
+      .icons i {
+          font-size: 24px;
+      }
+
+      .comment-section {
+          display: flex;
+          align-items: center;
+      }
+      .comment-section img {
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+      }
+      .comment-section input {
+          border: none;
+          border-bottom: 1px solid #D3BCA2;
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          color: #D3BCA2;
+          background: none;
+      }
+      .comment-section input:focus {
+          outline: none;
+      }
+      .comment-list {
+          margin-top: 20px;
+      }
+      .comment {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+      }
+      .comment img {
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+      }
+      .comment p {
+          background-color: #FFF;
+          padding: 10px;
+          border-radius: 10px;
+          margin: 0;
+      }
+      .comment-text {
+          font-weight: bold;
+          margin-bottom: 20px;
+      }
+
+
+      
