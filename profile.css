@@ -29,7 +29,7 @@ html {
   width: calc(100% - 80px); /* Hitung lebar sesuai konten utama */
   z-index: 10;
   background-color: white; /* Pastikan memiliki latar belakang */
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
   display: flex; /* Pastikan elemen anak diatur dengan baik */
   align-items: center; /* Rata vertikal elemen */
   justify-content: space-between; /* Sebarkan elemen di dalam header */
