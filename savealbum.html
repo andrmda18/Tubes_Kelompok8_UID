@@ -263,12 +263,32 @@
         transform: scale(0.95)
       }
 
+      .menu-item.active .icon-container {
+        background-color: #d4c8f2;
+        border-radius: 50px;
+      }
+
+      .menu-item.active span {
+        font-weight: bold;
+      }
+
       @media (max-width: 768px) {
         .button-container {
           flex-direction: column;
           gap: 10px; /* Jarak tetap untuk versi responsif */
         }
       }
+      .button:hover {
+        background-color: #6499e9;
+        color: white;
+        transform: scale(0.95)
+      }
+
+      .button.active {
+        background-color: #fff;
+        color: black;
+      }
+
     </style>
   </head>
 
@@ -281,31 +301,31 @@
             class="bg-cyan-200 w-20 flex flex-col items-center py-4 space-y-8 rounded-r-3xl"
           >
             <div class="flex flex-col items-center space-y-4">
-              <a href="#" class="menu-item">
+              <a href="rumah.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-house"></i>
                 </div>
                 <span>Beranda</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="komunitas.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-people"></i>
                 </div>
                 <span>Komunitas</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="chat.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-chat-left-text"></i>
                 </div>
                 <span>Obrolan</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="#" class="menu-item active">
                 <div class="icon-container">
                   <i class="bi bi-bookmark"></i>
                 </div>
                 <span>Bookmark</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="unggahfoto.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-plus-square"></i>
                 </div>
@@ -372,9 +392,9 @@
             <div class="button-container">
               <div class="button">
                 Semua
-                <a href="#"></a>
+                <a href="saveall.html"></a>
               </div>
-              <div class="button">
+              <div class="button active">
                 Album
                 <a href="#"></a>
               </div>
