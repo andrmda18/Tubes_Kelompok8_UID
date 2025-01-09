@@ -174,124 +174,126 @@
         margin-bottom: 100px;
       }
 
-      /* Kontainer kartu */
-      .card-container {
-        padding: 50px;
-        gap: 50px; /* Jarak antar kartu */
-        display: grid; /* Mengatur elemen di dalamnya agar menggunakan layout flexbox */
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
-        justify-content: center; /* Menyelaraskan elemen secara horizontal di tengah */
-      }
 
-      /* Setelan kartu */
-      .card {
-        background-color: #fff;
-        border: 2px solid black;
-        border-radius: 10px;
-        border-color: black;
-        border-width: 3px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        overflow: hidden;
-        padding-bottom: 10px;
+      .album-save {
+        margin-top: 100px;
+        margin-bottom: 100px;
       }
-
-      .card:hover {
-        background-color: #e7e7e7;
-      }
-
-      /* Header kartu */
-      .card-header {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        background-color: #f5faff; /* Warna latar header */
-      }
-
-      /* Gambar profil */
-      .profile-picture {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        margin-right: 10px;
-      }
-
-      /* Nama pengguna */
-      .username {
-        font-weight: bold;
-        font-size: 12px;
-        color: #333;
-      }
-
-      /* Gambar utama */
-      .card-image {
-        width: 90%; /* Lebar gambar 80% dari container */
-        height: auto;
-        aspect-ratio: 1 / 1; /* Menjaga rasio 1:1 */
-        object-fit: cover; /* Memastikan gambar terpotong dengan baik */
-        margin: 0 auto; /* Mengatur gambar ke tengah */
-        display: block;
-        border-radius: 5px; /* Tambahkan border radius untuk estetika */
-        margin-top: 20px;
-      }
-
-      /* Body kartu */
-      .card-body {
-        padding: 10px;
-      }
-
-      /* Ikon */
-      .icons {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 5px;
-      }
-
-      .icons-eye {
-        display: flex;
-        margin-bottom: 5px;
-        width: 10px;
-        height: auto;
-        color: #555;
-      }
-
-      .icons span {
-        font-size: 18px;
-        cursor: pointer;
-      }
-
-      /* Caption */
-      .caption {
-        font-size: 14px;
-        color: #555;
-      }
-
-      /* Media Queries untuk layar lebih kecil */
-      @media (max-width: 768px) {
+     /* Kontainer kartu */
         .card-container {
-          flex-direction: column; /* Tumpukan kartu secara vertikal */
-          align-items: center; /* Pusatkan kartu */
+          padding: 50px;
+          gap: 30px; /* Jarak antar kartu */
+          display: flex; /* Mengatur elemen di dalamnya agar menggunakan layout flexbox */
+          align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+          justify-content: center; /* Menyelaraskan elemen secara horizontal di tengah */
         }
 
+        /* Setelan kartu */
         .card {
-          width: 90%; /* Kartu memenuhi 90% lebar layar */
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          width: 300px;
+          overflow: hidden;
+          padding-bottom: 10px;
         }
-      }
 
-      @media (max-width: 480px) {
+        .card:hover {
+          background-color: #e7e7e7;
+        }
+
+        /* Header kartu */
+        .card-header {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          background-color: #f5faff; /* Warna latar header */
+        }
+
+        /* Gambar profil */
+        .profile-picture {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        /* Nama pengguna */
         .username {
-          font-size: 10px; /* Kurangi ukuran teks username */
+          font-weight: bold;
+          font-size: 12px;
+          color: #333;
         }
 
+        /* Gambar utama */
+        .card-image {
+          width: 85%; /* Lebar gambar 80% dari container */
+          height: auto;
+          aspect-ratio: 1 / 1; /* Menjaga rasio 1:1 */
+          object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+          margin: 0 auto; /* Mengatur gambar ke tengah */
+          display: block;
+          border-radius: 5px; /* Tambahkan border radius untuk estetika */
+          margin-top: 20px;
+        }
+
+        /* Body kartu */
+        .card-body {
+          padding: 5px;
+        }
+
+        /* Ikon */
+        .icons {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 5px;
+        }
+
+        .icons-eye {
+          display: flex;
+          margin-bottom: 5px;
+          width: 10px;
+          height: auto;
+          color: #555;
+        }
+
+        .icons span {
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        /* Caption */
         .caption {
-          font-size: 12px; /* Kurangi ukuran teks caption */
+          font-size: 14px;
+          color: #555;
         }
 
-        .card {
-          width: 100%; /* Kartu memenuhi seluruh lebar layar */
+        /* Media Queries untuk layar lebih kecil */
+        @media (max-width: 768px) {
+          .card-container {
+            flex-direction: column; /* Tumpukan kartu secara vertikal */
+            align-items: center; /* Pusatkan kartu */
+          }
+
+          .card {
+            width: 90%; /* Kartu memenuhi 90% lebar layar */
+          }
         }
-      }
+
+        @media (max-width: 480px) {
+          .username {
+            font-size: 10px; /* Kurangi ukuran teks username */
+          }
+
+          .caption {
+            font-size: 12px; /* Kurangi ukuran teks caption */
+          }
+
+          .card {
+            width: 100%; /* Kartu memenuhi seluruh lebar layar */
+          }
+        }
+
 
       .button-container {
         display: flex;
@@ -307,21 +309,23 @@
         text-align: center;
         font-size: 1.5rem;
         font-weight: bold;
-        color: black;
+        color: white;
         cursor: pointer;
-        background-color: #9cf4f9;
+        background-color: #6499e9;
         height: 70px;
-        border: 3px solid black;
+        /* border: 3px solid black; */
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
       }
 
       .button:last-child {
-        background-color: #ffff;
+        background-color: white;
+        color: black;
       }
 
       .button:hover {
-        background-color: #9cf4f9;
+        background-color: #6499e9;
+        color: white;
       }
 
       @media (max-width: 768px) {
@@ -419,154 +423,134 @@
                   <div class="icon-container">
                     <i class="bi bi-person-circle"></i>
                   </div>
-                  <span>Chanyeol</span>
+                  <span style="text-decoration: none;">Chanyeol</span>
                 </a>
               </div>
             </div>
           </div>
           <!-- header end -->
-          <div class="save-content">
+          <div class="album-save">
+
+            <!-- Button container -->
             <div class="button-container">
-              <div class="button">
-                Semua
-                <a href="#"></a>
-              </div>
-              <div class="button">
-                Album
-                <a href="#"></a>
-              </div>
-            </div>
-
-            <div class="card-container">
-              <!-- Kartu 1 -->
-              <div class="card">
-                <div class="card-header">
-                  <img
-                    src="images/sehun.jpg"
-                    alt="Profile Picture"
-                    class="profile-picture"
-                  />
-                  <span class="username">Samuel1223</span>
-                </div>
-                <img
-                  src="images/smoothie-bowl.jpg"
-                  alt="Smoothie Bowl"
-                  class="card-image"
-                />
-                <div class="card-body">
-                  <div class="icons">
-                    <span><i class="bi bi-heart"></i></span>
-                    <span><i class="bi bi-chat"></i></span>
-                    <span><i class="bi bi-send"></i></span>
-                  </div>
-                  <p class="caption">Smoothie Bowl</p>
-                  <div class="icons-eye">
-                    <span><i class="bi bi-eye"></i></span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Kartu 2 -->
-              <div class="card">
-                <div class="card-header">
-                  <img
-                    src="images/chef ainun.jpg"
-                    alt="Profile Picture"
-                    class="profile-picture"
-                  />
-                  <span class="username">Samuel1223</span>
-                </div>
-                <img
-                  src="images/nasi hainan.jpg"
-                  alt="Nasi Hainan"
-                  class="card-image"
-                />
-                <div class="card-body">
-                  <div class="icons">
-                    <span><i class="bi bi-heart"></i></span>
-                    <span><i class="bi bi-chat"></i></span>
-                    <span><i class="bi bi-send"></i></span>
-                  </div>
-                  <p class="caption">Nasi Hainan</p>
-                  <div class="icons-eye">
-                    <span><i class="bi bi-eye"></i></span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Kartu 3 -->
-              <div class="card">
-                <div class="card-header">
-                  <img
-                    src="images/chef jaemin.jpg"
-                    alt="Profile Picture"
-                    class="profile-picture"
-                  />
-                  <span class="username">Samuel1223</span>
-                </div>
-                <img src="images/dawet.jpg" alt="Dawet" class="card-image" />
-                <div class="card-body">
-                  <div class="icons">
-                    <span><i class="bi bi-heart"></i></span>
-                    <span><i class="bi bi-chat"></i></span>
-                    <span><i class="bi bi-send"></i></span>
-                  </div>
-                  <p class="caption">Dawet</p>
-                  <div class="icons-eye">
-                    <span><i class="bi bi-eye"></i></span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Kartu 4 -->
-              <div class="card">
-                <div class="card-header">
-                  <img
-                    src="images/chef jaemin.jpg"
-                    alt="Profile Picture"
-                    class="profile-picture"
-                  />
-                  <span class="username">Samuel1223</span>
-                </div>
-                <img src="images/dawet.jpg" alt="Dawet" class="card-image" />
-                <div class="card-body">
-                  <div class="icons">
-                    <span><i class="bi bi-heart"></i></span>
-                    <span><i class="bi bi-chat"></i></span>
-                    <span><i class="bi bi-send"></i></span>
-                  </div>
-                  <p class="caption">Dawet</p>
-                  <div class="icons-eye">
-                    <span><i class="bi bi-eye"></i></span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Kartu 5 -->
-              <div class="card">
-                <div class="card-header">
-                  <img
-                    src="images/chef love.jpg"
-                    alt="Profile Picture"
-                    class="profile-picture"
-                  />
-                  <span class="username">Samuel1223</span>
-                </div>
-                <img src="images/ramen.jpg" alt="Ramen" class="card-image" />
-                <div class="card-body">
-                  <div class="icons">
-                    <span><i class="bi bi-heart"></i></span>
-                    <span><i class="bi bi-chat"></i></span>
-                    <span><i class="bi bi-send"></i></span>
-                  </div>
-                  <p class="caption">Ramen</p>
-                  <div class="icons-eye">
-                    <span><i class="bi bi-eye"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+             <div class="button">
+               Semua
+               <a href="#"></a>
+             </div>
+             <div class="button">
+               Album
+               <a href="#"></a>
+             </div>
+           </div>
+           <section id="resep" class="pt-5 text-center">
+             <div class="card-container">
+               <!-- Kartu 1 -->
+               <div class="card">
+                 <div class="card-header">
+                   <img
+                     src="images/chef jaemin.jpg"
+                     alt="Profile Picture"
+                     class="profile-picture"
+                   />
+                   <span class="username">Jaemin</span>
+                 </div>
+                 <img
+                   src="images/smoothie-bowl.jpg"
+                   alt="Smoothie Bowl"
+                   class="card-image"
+                 />
+                 <div class="card-body">
+                   <div class="icons">
+                     <span><i class="bi bi-heart"></i></span>
+                     <span><i class="bi bi-chat"></i></span>
+                     <span><i class="bi bi-send"></i></span>
+                   </div>
+                   <p class="caption">Smoothie Bowl</p>
+                   <div class="icons-eye">
+                     <span><i class="bi bi-eye"></i></span>
+                   </div>
+                 </div>
+               </div>
+       
+               <!-- Kartu 2 -->
+               <div class="card">
+                 <div class="card-header">
+                   <img
+                     src="images/chef ainun.jpg"
+                     alt="Profile Picture"
+                     class="profile-picture"
+                   />
+                   <span class="username">Ainun</span>
+                 </div>
+                 <img
+                   src="images/nasi hainan.jpg"
+                   alt="Nasi Hainan"
+                   class="card-image"
+                 />
+                 <div class="card-body">
+                   <div class="icons">
+                     <span><i class="bi bi-heart"></i></span>
+                     <span><i class="bi bi-chat"></i></span>
+                     <span><i class="bi bi-send"></i></span>
+                   </div>
+                   <p class="caption">Nasi Hainan</p>
+                   <div class="icons-eye">
+                     <span><i class="bi bi-eye"></i></span>
+                   </div>
+                 </div>
+               </div>
+       
+               <!-- Kartu 3 -->
+               <div class="card">
+                 <div class="card-header">
+                   <img
+                     src="images/sehun.jpg"
+                     alt="Profile Picture"
+                     class="profile-picture"
+                   />
+                   <span class="username">Sehun</span>
+                 </div>
+                 <img src="images/dawet.jpg" alt="Dawet" class="card-image" />
+                 <div class="card-body">
+                   <div class="icons">
+                     <span><i class="bi bi-heart"></i></span>
+                     <span><i class="bi bi-chat"></i></span>
+                     <span><i class="bi bi-send"></i></span>
+                   </div>
+                   <p class="caption">Dawet</p>
+                   <div class="icons-eye">
+                     <span><i class="bi bi-eye"></i></span>
+                   </div>
+                 </div>
+               </div>
+       
+               <!-- Kartu 4 -->
+               <div class="card">
+                 <div class="card-header">
+                   <img
+                     src="images/chef suho.jpg"
+                     alt="Profile Picture"
+                     class="profile-picture"
+                   />
+                   <span class="username">Suho</span>
+                 </div>
+                 <img src="images/ramen.jpg" alt="Ramen" class="card-image" />
+                 <div class="card-body">
+                   <div class="icons">
+                     <span><i class="bi bi-heart"></i></span>
+                     <span><i class="bi bi-chat"></i></span>
+                     <span><i class="bi bi-send"></i></span>
+                   </div>
+                   <p class="caption">Ramen</p>
+                   <div class="icons-eye">
+                     <span><i class="bi bi-eye"></i></span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            </section>
             <!-- Postingan End -->
+          </div>
           </div>
         </div>
       </div>

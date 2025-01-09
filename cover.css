@@ -2,23 +2,25 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Gaya latar belakang utama */
 body {
-  background: linear-gradient(to bottom, #a3e3f0 10%, #ffecb3 100%);
+  background: linear-gradient(to bottom, #6499e9 10%, #ffffff 100%);
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 /* Container utama */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 90vh; /* Tinggi layar penuh */
+.container-utama {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
 }
 /* Gaya teks */
 .text-section {
@@ -33,13 +35,11 @@ body {
 }
 
 .hero-container {
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* Vertikal rata tengah */
+  justify-content: space-between; /* Spasi di antara teks dan gambar */
+  height: 80vh; /* Kurangi tinggi hero */
   border-radius: 10px;
-  padding-top: 2px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
 }
 
 .button {
@@ -55,15 +55,23 @@ body {
 .button:hover {
   background-color: #a3e3f0;
 }
+.image-section {
+  display: flex;
+  justify-content: center; /* Gambar berada di tengah secara horizontal */
+  align-items: center; /* Gambar berada di tengah secara vertikal */
+  height: 100%; /* Tinggi penuh sesuai container */
+}
+
 .image-section img {
-  max-width: 80%;
+  margin: 0; /* Hilangkan margin default */
+  padding: 0;
+  max-width: 100%;
   height: auto;
-  margin-left: 70px;
-  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
+  padding: 0;
+  margin: 0;
   background-color: transparent;
 }
 .navbar-nav .nav-link {
@@ -78,23 +86,7 @@ body {
   height: 40px;
 }
 
-/* .food-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin: 20px 0;
-}
-.food-category {
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
+
 
 .food-categories {
   display: flex;
@@ -131,11 +123,7 @@ body {
   font-weight: bold;
   color: #333;
 }
-/* .content-container:hover{
-    background-color: #f5f5f5;
-    box-shadow: 0 10px 20px rgba(0, 0,0.4);
-  
-  } */
+
 
 /* Ukuran foto lebih kecil */
 #kategori img {
@@ -143,17 +131,6 @@ body {
   height: auto; /* Menjaga aspek rasio gambar */
   object-fit: contain; /* Menjaga gambar agar tetap terlihat rapi */
   margin: 0 auto; /* Untuk membuat gambar berada di tengah jika diperlukan */
-}
-
-/* Container utama */
-.content-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #a3e3f0; */
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Logo */
@@ -184,12 +161,22 @@ body {
 footer {
   text-align: center;
   padding: 20px 0;
-  /* background-color: #a3e3f0; Warna lebih tua */
-  color: #555; /* Warna teks */
+  color: #555;
   font-size: 0.9rem;
   margin-top: 30px;
 }
 
+.content-container {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Kategori */
 .category-header {
   margin-top: 30px;
 }
