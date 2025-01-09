@@ -163,8 +163,8 @@ html {
 }
 
 .category-card:hover {
-  transform: translateY(-10px); /* Mengangkat kartu ke atas */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih besar */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
 }
 
 .category-card img {
@@ -276,6 +276,7 @@ html {
 
 /* Caption */
 .caption {
+  font-weight: bold;
   font-size: 14px;
   color: #555;
 }
@@ -351,4 +352,12 @@ html {
   .nav-profile a {
     font-size: 0.9rem; /* Mengurangi ukuran teks nama pengguna */
   }
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
+}
+
+.card :hover a{
+  text-decoration: underline;
 }
