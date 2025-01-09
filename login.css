@@ -48,25 +48,27 @@ ul li img {
   width: 100%;
 }
 
-.btn-primary {
+.masuk {
   color: white;
-  background-color: #85cddb;
-  border-color: #85cddb;
+  background-color: #6499e9;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
 }
 
 /* css login start */
 .custom-outline:focus {
-  outline: 8px solid rgba(133, 205, 219, 0.5); /* Outline dengan opasitas 50% */
-  box-shadow: 0 0 10px rgba(133, 205, 219, 0.5); /* Shadow dengan opasitas 50% */
+  outline: 8px solid rgba(100, 153, 233, 0.5); /* Outline dengan opasitas 50% */
+  box-shadow: 0 0 10px rgba(100, 153, 233, 0.5); /* Shadow dengan opasitas 50% */
   outline: none !important;
 }
 
 .custom-outline.form-control {
-  outline: 1px solid rgba(133, 205, 219, 0.5); /* Outline default dengan opasitas 50% */
+  outline: 1px solid rgba(100, 153, 233, 0.5); /* Outline default dengan opasitas 50% */
   border-color: rgba(
-    133,
-    205,
-    219,
+    100,
+    153,
+    233,
     0.5
   ) !important; /* Border default dengan opasitas 50% */
 }
@@ -105,6 +107,10 @@ ul li img {
 .google-signup a:hover {
   color: blue;
   text-decoration: underline; /* Menambahkan garis bawah saat di-hover */
+}
+
+.masuk:hover {
+  transform: scale(0.95);
 }
 
 /* css login end */
