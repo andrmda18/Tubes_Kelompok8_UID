@@ -5,6 +5,15 @@ html {
   margin: 0;
 }
 
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
+}
+
 .col-11 {
   margin-left: 100px; /* Menambahkan margin kiri untuk memberikan ruang di samping sidebar */
   margin-right: 20px;
