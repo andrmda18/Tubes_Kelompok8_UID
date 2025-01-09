@@ -102,6 +102,15 @@ html {
   border-radius: 15px;
 }
 
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .sticky-header {
     left: 0;

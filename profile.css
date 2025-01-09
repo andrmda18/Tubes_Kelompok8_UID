@@ -42,6 +42,15 @@ html {
   margin: 0 auto; /* Mengatur margin agar center */
 }
 
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
+}
+
 .menu-item {
   text-decoration: none; /* Menghapus garis bawah pada link */
   color: #6e44c2; /* Mengatur warna teks untuk menu */
