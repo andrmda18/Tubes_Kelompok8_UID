@@ -1,28 +1,38 @@
 body,
 html {
   background-color: #f9f9f9;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  box-sizing: border-box; /* Menyesuaikan ukuran elemen */
+}
+
+.container-fluid {
+  max-width: 100vw; /* Mencegah elemen melampaui lebar layar */
+  padding: 0;
 }
 
 .col-11 {
-  margin-left: 100px; /* Menambahkan margin kiri untuk memberikan ruang di samping sidebar */
+  margin-left: 100px; /* Memberikan ruang untuk sidebar */
   margin-right: 20px;
   padding: 20px;
-  width: calc(100% - 120px); /* Menghindari tumpang tindih */
-  overflow-y: auto; /* Agar konten utama scrollable */
+  width: calc(100% - 120px); /* Menghindari overflow horizontal */
+  overflow-x: hidden;
 }
 
 .sticky-header {
   position: fixed;
-  padding: 0;
+  margin: 0;
   top: 0;
-  left: 80px;
-  width: calc(100% - 80px); /* Menghindari tumpang tindih */
-  z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
-  background-color: white; /* Tambahkan background agar tidak transparan */
-  /* border-bottom: 3px solid #9cf4f9; */
+  left: 80px; /* Sesuaikan dengan lebar sidebar */
+  width: calc(100% - 80px); /* Hitung lebar sesuai konten utama */
+  z-index: 10;
+  background-color: white; /* Pastikan memiliki latar belakang */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex; /* Pastikan elemen anak diatur dengan baik */
+  align-items: center; /* Rata vertikal elemen */
+  justify-content: space-between; /* Sebarkan elemen di dalam header */
 }
 
 .banner {
@@ -30,6 +40,15 @@ html {
   width: 100%; /* Pastikan lebar 100% agar menyesuaikan container parent */
   max-width: 1200px; /* Tetapkan max-width untuk mengontrol ukuran banner */
   margin: 0 auto; /* Mengatur margin agar center */
+}
+
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
 }
 
 .menu-item {
@@ -326,6 +345,43 @@ html {
   background-color: #007fad;
   color: white;
   /* transform: scale(1.05); */
+}
+
+.post-container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  /* max-width: 600px; */
+  height: 400px;
+  margin: 20px auto;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.post-header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.post-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.post-footer {
+  padding: 10px;
+}
+.post-footer .icons {
+  display: flex;
+  align-items: center;
+}
+.post-footer .icons i {
+  margin-right: 10px;
 }
 
 /* profile css end */

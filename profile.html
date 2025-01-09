@@ -34,28 +34,34 @@
         <div class="col-1 flex h-screen p-0 position-fixed">
           <div
             class="bg-cyan-200 w-20 flex flex-col items-center py-4 space-y-8 rounded-r-3xl border-t-r-0"
-            style="border-top-right-radius: 0px"
+            style="
+              border-top-right-radius: 0px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 100%;
+            "
           >
             <div class="flex flex-col items-center space-y-4">
-              <a href="#" class="menu-item">
+              <a href="#" class="menu-item active">
                 <div class="icon-container">
                   <i class="bi bi-house"></i>
                 </div>
                 <span>Beranda</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="komunitas.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-people"></i>
                 </div>
                 <span>Komunitas</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="chat.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-chat-left-text"></i>
                 </div>
                 <span>Obrolan</span>
               </a>
-              <a href="#" class="menu-item">
+              <a href="saveall.html" class="menu-item">
                 <div class="icon-container">
                   <i class="bi bi-bookmark"></i>
                 </div>
@@ -81,8 +87,8 @@
         <!-- Main Content start -->
         <div class="col-11 flex-1 p-0">
           <!-- header start -->
-          <div class="flex items-center justify-between sticky-header">
-            <div class="flex items-center space-x-2">
+          <div class="sticky-header">
+            <div class="flex items-center space-x-1">
               <span class="text-xl font-bold px-2">foodie</span>
               <div
                 class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-full"
@@ -119,6 +125,7 @@
               </div>
             </div>
           </div>
+
           <!-- header end -->
 
           <!-- profile start -->
@@ -131,7 +138,7 @@
               />
               <div class="text-center">
                 <img
-                  src="https://storage.googleapis.com/a1aa/image/kkEBLRJOdm4kFZqh27ndpZ4m3VwkKyvkpOfip76cBJfgLWAUA.jpg"
+                  src="images/chef jaemin.jpg"
                   alt="Profile Picture"
                   class="profile-pic"
                 />
@@ -139,7 +146,7 @@
               <div class="actions">
                 <div class="left-content">
                   <h1 class="mb-1" style="font-weight: bold; font-size: 25px">
-                    Monsieur oss
+                    Jaemin
                   </h1>
                   <div class="icons">
                     <span><i class="bi bi-eye"></i>2.1M</span>
@@ -224,14 +231,40 @@
                   <div class="suggested-profile">
                     <img
                       alt="Profile picture of amber ruby"
-                      src="https://storage.googleapis.com/a1aa/image/k55CTUfDTF1NPKqo0OfHSSNxiyvWFpwZwKWLfsy5FKsILNGoA.jpg"
+                      src="images/chef suho.jpg"
                     />
                     <div class="info">
-                      <h3>amber ruby</h3>
+                      <h3>suho cook</h3>
                       <p>134 Following</p>
                       <p>2,345 Followers</p>
                     </div>
                     <button class="follow-btn">Follow</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="post-container">
+                  <div class="post-header">
+                    <img
+                      alt="User profile picture"
+                      height="40"
+                      src="https://storage.googleapis.com/a1aa/image/CFtyT9KGWN5CC9dk1w3JSTjvw4jD106qZ4C5zCQmlxeeIODUA.jpg"
+                      width="40"
+                    />
+                    <span> jaemin</span>
+                  </div>
+                  <img
+                    alt="Plate of food with rice, eggs, and other dishes"
+                    class="post-image"
+                    src="https://storage.googleapis.com/a1aa/image/mzbkDG5iZX5CJhxkAHBfixwnm04tCWhRtOeYdokjBeA9RcGoA.jpg"
+                  />
+                  <div class="post-footer">
+                    <div class="icons">
+                      <i class="fas fa-heart"> </i>
+                      <i class="fas fa-comment"> </i>
+                      <i class="fas fa-share"> </i>
+                    </div>
+                    <p>Nasi Sambal Matah</p>
                   </div>
                 </div>
               </div>
