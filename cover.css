@@ -44,16 +44,16 @@ body {
 
 .button {
   text-decoration: none;
-  /*background-color: #007bff;
-  */
+  background-color: #6499e9;
   color: black;
-  border: 2px solid #a3e3f0;
+  /* border: 2px solid #6499e9; */
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
 }
 .button:hover {
-  background-color: #a3e3f0;
+  /* background-color: #a3e3f0; */
+  transform: scale(0.95);
 }
 .image-section {
   display: flex;
@@ -309,7 +309,8 @@ footer {
 }
 
 .icons-eye {
-  display: flex;
+  text-align: left;
+  /* display: flex; */
   margin-bottom: 5px;
   width: 10px;
   height: auto;
@@ -323,6 +324,7 @@ footer {
 
 /* Caption */
 .caption {
+  font-weight: bold;
   font-size: 14px;
   color: #555;
 }
