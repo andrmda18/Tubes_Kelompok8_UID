@@ -28,7 +28,8 @@ html {
   left: 80px; /* Sesuaikan dengan lebar sidebar */
   width: calc(100% - 80px); /* Hitung lebar sesuai konten utama */
   z-index: 10;
-  background-color: white; /* Pastikan memiliki latar belakang */
+  text-decoration: none;
+  background-color: #f9f9f9; /* Pastikan memiliki latar belakang */
   /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
   display: flex; /* Pastikan elemen anak diatur dengan baik */
   align-items: center; /* Rata vertikal elemen */

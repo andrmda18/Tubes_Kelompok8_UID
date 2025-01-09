@@ -91,7 +91,13 @@
   color: #555;
 }
 
-
+.icons-eye {
+  display: flex;
+  margin-bottom: 5px;
+  width: 10px;
+  height: auto;
+  color: #555;
+}
 
 /* Media Queries untuk layar lebih kecil */
 @media (max-width: 768px) {
