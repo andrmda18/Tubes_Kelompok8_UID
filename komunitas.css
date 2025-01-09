@@ -1,9 +1,19 @@
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* background-color: aqua; */
+}
 .konten-kom{
     margin-top: 100;
     margin-bottom: 100px;
 }
+
+.kiri{
+    padding: 20px;
+}
+
 .kanan{
-    background-color: lightslategray;
+    padding: 20px;
 }
 .container-community {
     max-width: 400px;
@@ -129,7 +139,7 @@ img{
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 600px;
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
     margin-top: 20px;
