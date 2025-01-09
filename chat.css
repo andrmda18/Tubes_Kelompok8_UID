@@ -23,6 +23,15 @@ html {
   background-color: #f9f9f9f9; /* Tambahkan background agar tidak transparan */
 }
 
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
+}
+
 .menu-item {
   text-decoration: none; /* Menghapus garis bawah pada link */
   color: #6e44c2; /* Mengatur warna teks untuk menu */

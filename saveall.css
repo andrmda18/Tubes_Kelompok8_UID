@@ -91,6 +91,8 @@
   color: #555;
 }
 
+
+
 /* Media Queries untuk layar lebih kecil */
 @media (max-width: 768px) {
   .card-container {
