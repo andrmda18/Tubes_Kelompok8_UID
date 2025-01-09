@@ -29,9 +29,9 @@ html {
   left: 80px;
   width: calc(100% - 80px); /* Menghindari tumpang tindih */
   z-index: 10; /* Supaya elemen ini berada di atas elemen lain */
-  background-color: white; /* Tambahkan background agar tidak transparan */
+  background-color: #f9f9f9; /* Tambahkan background agar tidak transparan */
   /* border-bottom: 3px solid #9cf4f9; */
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .banner {

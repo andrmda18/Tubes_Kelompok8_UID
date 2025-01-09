@@ -152,6 +152,15 @@ flex-direction: column; /* Menata konten secara vertikal */
 align-items: center; /* Mengatur konten agar terpusat secara horizontal */
 }
 
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
+}
+
 /* Menata konten utama */
 .main-content {
 display: flex; /* Menggunakan Flexbox untuk menata elemen di dalam konten utama */
