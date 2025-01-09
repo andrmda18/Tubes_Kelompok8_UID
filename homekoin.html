@@ -210,69 +210,18 @@
       background-color: #ffffff;
       color: black;
       font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 12px;
+      padding: 16px 32px;
+      border-radius: 15px;
       border-color: #5b81bb;
       border-width: 3px;
       cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
+      font-size: 18px;
+  }
 
-    .buttons button:hover {
-      background-color: #5b81bb;
-      color: white;
-    }
-
-    .chart-container {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-grow: 1;
-    }
-
-    .select-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .chart-title {
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    #coinsChart {
-      width: 100%;
-      height: 300px;
-    }
-
-    @media (max-width: 768px) {
-      .row {
-        flex-direction: column;
-      }
-
-      .col-md-5,
-      .col-md-7 {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      .select-container {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-      }
-    }
-    
-    .transaction-history {
+  .buttons button:hover{
+    background-color: #5b81bb;
+  }
+  .transaction-history {
       margin-bottom: 24px;
     }
     .transaction-history .title {
@@ -356,10 +305,13 @@
           <div class="flex items-center justify-between sticky-header">
             <div class="flex items-center space-x-2">
               <span class="text-xl font-bold px-2">foodie</span>
-              <div
-                class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-full"
-              >
-                <span class="text-xl font-bold">F</span>
+              <div class="koin-nav text-center p-2">
+                <a href="homekoin.html">
+                  <div class="bg-yellow-400 w-8 h-8 flex items-center justify-center rounded-full mx-auto">
+                    <img src="images/Koin.png" alt="">
+                  </div>
+                  <p style="font-size: 12px;">12000</p>
+                </a>
               </div>
             </div>
 
@@ -386,7 +338,7 @@
                   <div class="icon-container">
                     <i class="bi bi-person-circle"></i>
                   </div>
-                  <span>Chanyeol</span>
+                  <span>Admin</span>
                 </a>
               </div>
             </div>
