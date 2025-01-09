@@ -42,6 +42,15 @@ html {
   margin: 0 auto; /* Mengatur margin agar center */
 }
 
+.nav-profile.active {
+  background-color: #d4c8f2;
+  border-radius: 20px;
+}
+
+.nav-profile.active span {
+  font-weight: bold;
+}
+
 .menu-item.active .icon-container {
   background-color: #d4c8f2;
   border-radius: 50px;
@@ -239,7 +248,7 @@ html {
 
 .tombol {
   color: black;
-  border: 2px solid #6499e9;
+  background-color: #6499e9;
   border-radius: 30px;
   padding: 10px 20px;
   cursor: pointer;
@@ -247,8 +256,7 @@ html {
 
 .tombol:hover {
   color: white;
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
+  transform: scale(0.95);
   background-color: #6499e9;
 }
 
@@ -341,10 +349,16 @@ html {
   color: #555;
 }
 
+.follow-btn {
+  border-radius: 30px;
+  background-color: #6499e9;
+  padding: 10px 20px;
+}
+
 .follow-btn:hover {
-  background-color: #007fad;
+  background-color: #6499e9;
   color: white;
-  /* transform: scale(1.05); */
+  transform: scale(1.05);
 }
 
 .post-container {
