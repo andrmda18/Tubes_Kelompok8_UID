@@ -436,16 +436,18 @@ html {
 }
 
 .upload-button button {
-  border: 2px solid #9cf4f9; /* Warna dan ketebalan border */
+  border: 2px solid  #6499e9; /* Warna dan ketebalan border */
   border-radius: 15px; /* Efek rounded pada sudut tombol */
   margin-top: 16px; /* Jarak dari atas tombol */
-  color: #6e44c2; /* Warna teks tombol */
+  color: #ffffff; /* Warna teks tombol */
   padding: 8px 16px; /* Padding pada tombol */
   cursor: pointer; /* Efek pointer saat hover */
+  background-color:  #6499e9;
 }
 
 .upload-button button:hover {
-  background-color: #9cf4f9; /* Warna latar tombol */
+  background-color:  #6499e9; /* Warna latar tombol */
+  transform: scale(0.95)
 }
 
 /* Overlay Styling */
@@ -464,4 +466,13 @@ html {
   display: flex; /* Flexbox untuk tata letak vertikal dan horizontal */
   justify-content: center; /* Mengatur konten di tengah horizontal */
   align-items: center; /* Mengatur konten di tengah vertikal */
+}
+
+.menu-item.active .icon-container {
+  background-color: #d4c8f2;
+  border-radius: 50px;
+}
+
+.menu-item.active span {
+  font-weight: bold;
 }
